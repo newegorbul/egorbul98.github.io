@@ -1135,6 +1135,7 @@ h1 .sm {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-top: 75px;
+	justify-content: center;
 }
 
 .projects-list-item {

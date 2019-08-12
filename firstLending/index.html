@@ -409,20 +409,20 @@
 			<div class="projects">
 				<div class="tab">
 					<div class="tab-slider-wrap">
-					<ul id='tab-caption-slider' class="tab-caption">
-						<li class="tab-caption__item active"><span>All Work</span></li>
-						<li class="tab-caption__item"><span>Graphics</span></li>
-						<li class="tab-caption__item"><span>WebDesign</span></li>
-						<li class="tab-caption__item"><span>Branding</span></li>
-						<li class="tab-caption__item"><span>Video</span></li>
-						<li class="tab-caption__item"><span>Photography</span></li>
+					<ul id='tab-caption-slider' class="tab-caption controls">
+						<li class="tab-caption__item active" data-filter="all"><span>All Work</span></li>
+						<li class="tab-caption__item" data-filter=".graphics"><span>Graphics</span></li>
+						<li class="tab-caption__item" data-filter=".webdesign"><span>WebDesign</span></li>
+						<li class="tab-caption__item" data-filter=".branding"><span>Branding</span></li>
+						<li class="tab-caption__item" data-filter=".video"><span>Video</span></li>
+						<li class="tab-caption__item" data-filter=".photography"><span>Photography</span></li>
 					</ul>
 					<div class="tab-caption-slider__btns"></div>
 				</div>
 					<div class="tab-content">
 						<div class="tab-content__item active">
 							<div class="projects-list">
-								<div class="projects-list-item">
+								<div class="projects-list-item graphics">
 									<a href="#" class="projects-list-item__link"></a>
 									<div class="projects-list-item__img">
 										<i class="fas fa-camera"></i>
@@ -432,7 +432,7 @@
 									<div class="projects-list-item__category">Graphics</div>
 								</div>
 
-								<div class="projects-list-item">
+								<div class="projects-list-item photography">
 									<a href="#" class="projects-list-item__link"></a>
 									<div class="projects-list-item__img">
 										<i class="fas fa-camera"></i>
@@ -442,7 +442,7 @@
 									<div class="projects-list-item__category">Photography</div>
 								</div>
 
-								<div class="projects-list-item">
+								<div class="projects-list-item branding">
 									<a href="#" class="projects-list-item__link"></a>
 									<div class="projects-list-item__img">
 										<img src="img/picture/projects-img.png" alt="">
@@ -452,7 +452,7 @@
 									<div class="projects-list-item__category">Branding</div>
 								</div>
 
-								<div class="projects-list-item">
+								<div class="projects-list-item graphics">
 									<a href="#" class="projects-list-item__link"></a>
 									<div class="projects-list-item__img">
 										<i class="fas fa-camera"></i>
@@ -462,7 +462,7 @@
 									<div class="projects-list-item__category">Graphics</div>
 								</div>
 
-								<div class="projects-list-item">
+								<div class="projects-list-item webdesign">
 									<a href="#" class="projects-list-item__link"></a>
 									<div class="projects-list-item__img">
 										<i class="fas fa-camera"></i>
@@ -472,7 +472,7 @@
 									<div class="projects-list-item__category">WebDesign</div>
 								</div>
 
-								<div class="projects-list-item">
+								<div class="projects-list-item video">
 									<a href="#" class="projects-list-item__link"></a>
 									<div class="projects-list-item__img">
 										<i class="fas fa-camera"></i>
@@ -482,7 +482,7 @@
 									<div class="projects-list-item__category">Video</div>
 								</div>
 
-								<div class="projects-list-item">
+								<div class="projects-list-item photography">
 									<a href="#" class="projects-list-item__link"></a>
 									<div class="projects-list-item__img">
 										<i class="fas fa-camera"></i>
@@ -492,7 +492,7 @@
 									<div class="projects-list-item__category">Photography</div>
 								</div>
 
-								<div class="projects-list-item">
+								<div class="projects-list-item branding">
 									<a href="#" class="projects-list-item__link"></a>
 									<div class="projects-list-item__img">
 										<i class="fas fa-camera"></i>
@@ -503,11 +503,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-content__item">2</div>
+						<!-- <div class="tab-content__item">2</div>
 						<div class="tab-content__item">3</div>
 						<div class="tab-content__item">4</div>
 						<div class="tab-content__item">5</div>
-						<div class="tab-content__item">6</div>
+						<div class="tab-content__item">6</div> -->
 					</div>
 				</div>
 			</div>
@@ -744,7 +744,12 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
+
 	<script type="text/javascript" src="js/custom.js"></script>
+
+
+
 	<script>
 		$('.navigation-btn-toogle').on('click', function () {
 			$(this).addClass('.active');
@@ -758,8 +763,8 @@
       //   });
       // }
 	</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYY8Bq08eiIoNM6urlT9RHsAzWhvkIO6Y&callback=initMap"
-async defer></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYY8Bq08eiIoNM6urlT9RHsAzWhvkIO6Y&callback=initMap"
+async defer></script> -->
 </body>
 
 </html>

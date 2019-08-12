@@ -15,26 +15,41 @@
 //});
 
 function functionTabs() { //Настраивает работу табов
-  $(this).addClass('active').siblings().removeClass('active').
-  parents('.tab').find('.tab-content__item').removeClass('active').
-  eq($(this).index()).addClass('active');
+  // $(this).addClass('active').siblings().removeClass('active').
+  // parents('.tab').find('.tab-content__item').removeClass('active').
+  // eq($(this).index()).addClass('active');
+  $(this).addClass('active').siblings().removeClass('active');
 }
 
 $(document).ready(function () {
   $('.tab-caption').on('click', 'li', functionTabs);
 
   $('#tab-caption-slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
-    $(this).parents('.tab').find('.slick-current').addClass('active').siblings().removeClass('active').
-    parents('.tab').find('.tab-content__item').removeClass('active').eq($(this).parents('.tab').find('.slick-current').index() - 1).addClass('active');
+    // $(this).parents('.tab').find('.slick-current').addClass('active').siblings().removeClass('active').
+    // parents('.tab').find('.tab-content__item').removeClass('active').eq($(this).parents('.tab').find('.slick-current').index()-1).addClass('active');
+    $(this).parents('.tab').find('.slick-current').trigger('click');
+  
   });
+
+  // mixItUp portfolio projects
+  var mixer = mixitup('.projects-list', {
+    selectors: {
+      target: '.projects-list-item'
+    },
+    animation: {
+      duration: 400
+    }
+  });
+
+
 });
 
 $(window).on('resize load', function () { //При изменении размера экранов, табы меняют своё поведение
-  if ($(window).width() < 768) {
-    $('.tab-caption').off('click');
-  } else {
-    $('.tab-caption').on('click', 'li', functionTabs);
-  }
+  // if ($(window).width() < 768) {
+  //   $('.tab-caption').off('click');
+  // } else {
+  //   $('.tab-caption').on('click', 'li', functionTabs);
+  // }
 });
 
 
@@ -91,7 +106,7 @@ $(window).on('resize load', function () {
       appendArrows: '.tab-caption-slider__btns',
       prevArrow: '<button type="button" class="slicks-prev"><i class="fas fa-chevron-left"></i></button>',
       nextArrow: '<button type="button" class="slicks-next"><i class="fas fa-chevron-right"></i></button>',
-      
+
     });
   }
 });

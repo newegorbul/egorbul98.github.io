@@ -3,11 +3,12 @@
 
 <head>
 
-	<title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
+	<title>Simple</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<meta charset="utf-8">
 	<script src="http://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="js/mixitup.min.js"></script>
 </head>
 <!-- <style>
 	* {
@@ -177,7 +178,7 @@
 			</div>
 		</div> -->
 
-<br><br><br>
+<!-- <br><br><br>
 <br><br><br>
 <style>
 	.div {
@@ -215,24 +216,52 @@
 		height: 600px;
 	}
 
+</style> -->
+<style>
+	.wrapper {
+		display: flex;
+		width: 80%;
+		justify-content: flex-start;
+		margin: auto;
+		flex-wrap: wrap;
+	}
+
+	.cat {
+		background-color: brown;
+		width: 200px;
+		height: 300px;
+	}
 </style>
 
 <body>
-	<div id="map"></div>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ducimus nostrum eligendi!</p>
+	<div class="controls">
+		<a  data-filter="all">All</a>
+		<a  data-filter=".category-a">Category A</a>
+		<a  data-filter=".category-b">Category B</a>
+		<a  data-filter=".category-c">Category C</a>
+	</div>
+	<div class="container wrapper">
+		<div class="mix cat category-a" data-order="1">1</div>
+		<div class="mix cat category-b" data-order="2">2</div>
+		<div class="mix cat category-b category-c" data-order="3">3</div>
+		<div class="mix cat category-a category-d" data-order="4">4</div>
+	</div>
 	<script>
-	// 	var map;
+		$(document).ready(function () {
+			// $(".container").mixItUp({
 
-	// 	function initMap() {
-	// 		map = new google.maps.Map(document.getElementById('map'), {
-	// 			center: {
-	// 				lat: -34.397,
-	// 				lng: 150.644
-	// 			},
-	// 			zoom: 8
-	// 		});
-	// 	}
-	// </script>
-	// <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYY8Bq08eiIoNM6urlT9RHsAzWhvkIO6Y&callback&callback=initMap" async defer></script>
+			// });
+			var mixer = mixitup('.container', {
+				selectors: {
+					target: '.cat'
+				},
+				animation: {
+					duration: 450
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>
