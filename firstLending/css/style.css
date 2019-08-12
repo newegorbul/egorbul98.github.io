@@ -1615,7 +1615,7 @@ h1 .sm {
 	position: relative;
 	padding-left: 50px;
 	margin-bottom: 18px;
-	font-weight: 000;
+	/* font-weight: 000; */
 }
 
 .contact-list li:last-child {
