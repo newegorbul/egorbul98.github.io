@@ -1047,6 +1047,9 @@ h2 {
     background-color: #fff;
     -webkit-box-shadow: 0 0 2px 1px rgba(215, 215, 215, 0.2);
     box-shadow: 0 0 2px 1px rgba(215, 215, 215, 0.2); }
+    .main-content .right-sidebar .sidebar-search__icon {
+      margin-left: 2px;
+      font-size: 16px; }
     .main-content .right-sidebar .right-sidebar__title {
       letter-spacing: 2px;
       text-align: center;
