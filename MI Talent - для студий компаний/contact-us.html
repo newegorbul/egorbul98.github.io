@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>contact-us</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/lightzoom.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700|Mrs+Saint+Delafield|Open+Sans:300,400,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+</head>
+
+<body class="about-me-page">
+  <header>
+    <div class="header-bg "></div>
+    <div class="wrapper header-wrap ">
+      <div class="header-content">
+        <div class="header-top">
+          <div class="navigation">
+            <button type="button" class="navigation-btn-open"></button>
+            <nav class="navigation-menu">
+              <button type="button" class="navigation-btn-close"><i class="fas fa-times"></i></button>
+              <ul>
+                <li class="navigation-menu__item"><a href="index.html">Home page 1</a></li>
+                <li class="navigation-menu__item"><a href="02-Home-Page.html">Home page 2</a></li>
+                <li class="navigation-menu__item"><a href="detail-page.html">Detail page</a></li>
+                <li class="navigation-menu__item"><a href="about-me.html">About Me</a></li>
+                <li class="navigation-menu__item"><a href="contact-us.html">Contact us</a></li>
+                <li class="navigation-menu__item"><a href="404.html">404</a></li>
+              </ul>
+              <ul class="navigation-menu__icon-list">
+                <li class="navigation-menu__icon"><a href="#"><i class="fas fa-rss"></i></a></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-tumblr"></i></a></i></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="logo"><img src="image/logo.png" alt="logo"></div>
+          <ul class="header__list-icon">
+            <li class="header__icon"><a href="#"><i class="fas fa-rss"></i></a></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-tumblr"></i></a></i></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="header__icon header__icon-search">
+              <form action="post" class="header-form">
+                <div class="header-form__field">
+                  <div class="header-form__field-wrap">
+                    <input type="search" class="header-form__search" placeholder="Поиск">
+                  </div>
+                  <span class="header-form__search-icon"><i class="fas fa-search"></i></span>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <section class="main-content ">
+      <div class="content-box">
+
+        <div class="contacts">
+          <div class="contacts__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4621.999101428517!2d37.619129866376056!3d55.75485594934041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1567771768921!5m2!1sru!2sru" style="width: 100%; height: 290px"></iframe>
+          </div>
+          <div class="contacts__info">
+            <h2>Contact information</h2>
+            <hr class="hr">
+            <p class="contacts__desc">In case you some aquestions popped in your’s mind, FeIn case you some aquestions
+              popped in your’el email or even visit us.</p>
+            <div class="contacts-list">
+              <div class="contact-list__item contacts__address">
+                <span class="contacts__icon"><i class="fas fa-home"></i></span>
+                <span class="contacts__text">Address: 123 Street Name, City Name, United States.</span>
+              </div>
+              <div class="contact-list__item contacts__email">
+                <span class="contacts__icon"><i class="far fa-envelope"></i></span>
+                <span class="contacts__text"><a href="#">Email: info@lifestyle.com</a></span>
+              </div>
+              <div class="contact-list__item contacts__site">
+                <span class="contacts__icon"><i class="fas fa-globe-asia"></i></span>
+                <span class="contacts__text"><a href="#">www.lifestyle.com</a></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form-message">
+          <form method="POST">
+            <div class="form-row">
+              <div class="form-field">
+                <input type="text" class="name form-control" placeholder="your name">
+              </div>
+              <div class="form-field">
+                <input type="email" class="email form-control" placeholder="your email address">
+              </div>
+            </div>
+            <div class="form-field">
+              <input type="text" class="email form-control" placeholder="website address">
+            </div>
+            <div class="form-field form-field-textarea">
+              <textarea name="message" class="message form-control" cols="30" rows="10"
+                placeholder="Please write a message here!"></textarea>
+            </div>
+            <div class="form-field-btn">
+                <input type="submit" class="btn" value="send message">
+              </div>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="btn-wrap">
+        <button type="button" class="btn-toggle-right-sidebar"></button>
+      </div>
+
+      <div class="wrap-right-sidebar">
+        <div class="right-sidebar">
+          <form action="POST" class="form">
+            <div class="form-field">
+              <input type="text" class='form-control' placeholder="search">
+              <input type="submit" class="btn" value="p">
+            </div>
+          </form>
+
+
+          <div class="advertising">
+            <img src="image/advertising-sm.jpg" alt="advertising">
+          </div>
+
+          <div class="latest-post latest-post--mod-last-child">
+            <h2 class='right-sidebar__title'>latest post</h2>
+
+            <ul class="latest-post-list latest-post-list--mod-last-child">
+              <li class="latest-post-list__item">
+                <div class="latest-post__img"><img src="image/latest-post__img-white.jpg" alt=""></div>
+                <div class="latest-post__content">
+                  <h2 class="latest-post__title">jurney towards a
+                    lifestyle</h2>
+                  <div class="latest-post-footer">
+                    <span class="date">Jan. 16 2015</span>
+                    <span class="like">Like <span class="like-count">255</span></span>
+                  </div>
+                </div>
+                <a href="#"></a>
+              </li>
+
+              <li class="latest-post-list__item">
+                <div class="latest-post__img"><img src="image/latest-post__img-black.jpg" alt=""></div>
+                <div class="latest-post__content">
+                  <h2 class="latest-post__title">Fashionable shoes
+                    for men</h2>
+                  <div class="latest-post-footer">
+                    <span class="date">Jan. 16 2015</span>
+                    <span class="like">Like <span class="like-count">255</span></span>
+                  </div>
+                </div>
+                <a href="#"></a>
+              </li>
+
+              <li class="latest-post-list__item">
+                <div class="latest-post__img"><img src="image/latest-post__img-black.jpg" alt=""></div>
+                <div class="latest-post__content">
+                  <h2 class="latest-post__title">really awesome’s 
+                      Adventure</h2>
+                  <div class="latest-post-footer">
+                    <span class="date">Jan. 16 2015</span>
+                    <span class="like">Like <span class="like-count">255</span></span>
+                  </div>
+                </div>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-top">
+        <div class="footer-top__item footer-about">
+          <h4 class="footer__title">about blog</h4>
+          <div class="footer-about__content">
+            <p class="footer__desc">Lorem ipsum dolor sit amet, conser adipisicing esse cillum dolore nulla
+              pariatur.</p>
+            <div class="footer-about__img"><img src="image/footer-about-img.jpg" alt="img"></div>
+          </div>
+        </div>
+        <div class="footer-top__item footer-tweets">
+          <h4 class="footer__title">latest tweets</h4>
+          <div class="footer-tweets__content">
+            <span class="footer__subtitle"><span class="footer-tweets__icon"><i
+                  class="fab fa-twitter"></i></span>@Twitter@magicalrebekah</span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+            <span class="footer__subtitle"><span class="footer-tweets__icon"><i
+                  class="fab fa-twitter"></i></span>@Twitter@magicalrebekah</span>
+            <p class="footer__desc">Developer Advocate hav a great work this knows the very well is about things .
+            </p>
+          </div>
+        </div>
+        <div class="footer-top__item footer-instagram">
+          <h4 class="footer__title">follow me instagram</h4>
+          <div class="footer-instagram__gallery">
+            <a href="image/galery/1.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/1.jpg"
+                alt="img"></a>
+            <a href="image/galery/2.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/2.jpg"
+                alt="img"></a>
+            <a href="image/galery/3.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/3.jpg"
+                alt="img"></a>
+            <a href="image/galery/4.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/4.jpg"
+                alt="img"></a>
+            <a href="image/galery/5.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/5.jpg"
+                alt="img"></a>
+            <a href="image/galery/6.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/6.jpg"
+                alt="img"></a>
+          </div>
+        </div>
+        <div class="footer-top__item footer-comment">
+          <h4 class="footer__title">latest comment</h4>
+          <div class="footer-comment__content">
+            <span class="footer__subtitle">From Alex : </span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+            <hr class="footer__hr">
+            <span class="footer__subtitle">From Jhon Doe : </span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">@2015 copyright .</p>
+      <ul>
+        <li class="footer-bottom__item">all right reserved by awesome theme</li>
+        <li class="footer-bottom__item">terms policy</li>
+        <li class="footer-bottom__item">disclaimer</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/lightzoom.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    $('.btn-toggle-right-sidebar').on('click', function () {
+      $('.wrap-right-sidebar').toggleClass('right-sidebar--active');
+      $(this).toggleClass('btn-toggle-right-sidebar--active');
+    });
+  </script>
+</body>
+
+</html>

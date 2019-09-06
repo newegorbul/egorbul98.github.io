@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DETAIL PAGE</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/lightzoom.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700|Mrs+Saint+Delafield|Open+Sans:300,400,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-bg"></div>
+    <div class="wrapper header-wrap ">
+      <div class="header-content">
+        <div class="header-top">
+          <div class="navigation">
+            <button type="button" class="navigation-btn-open"></button>
+            <nav class="navigation-menu">
+              <button type="button" class="navigation-btn-close"><i class="fas fa-times"></i></button>
+              <ul>
+                <li class="navigation-menu__item"><a href="index.html">Home page 1</a></li>
+                <li class="navigation-menu__item"><a href="02-Home-Page.html">Home page 2</a></li>
+                <li class="navigation-menu__item"><a href="detail-page.html">Detail page</a></li>
+                <li class="navigation-menu__item"><a href="about-me.html">About Me</a></li>
+                <li class="navigation-menu__item"><a href="contact-us.html">Contact us</a></li>
+                <li class="navigation-menu__item"><a href="404.html">404</a></li>
+              </ul>
+              <ul class="navigation-menu__icon-list">
+                <li class="navigation-menu__icon"><a href="#"><i class="fas fa-rss"></i></a></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-tumblr"></i></a></i></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="logo"><img src="image/logo.png" alt="logo"></div>
+          <ul class="header__list-icon">
+            <li class="header__icon"><a href="#"><i class="fas fa-rss"></i></a></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-tumblr"></i></a></i></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="header__icon header__icon-search">
+              <form action="post" class="header-form">
+                <div class="header-form__field">
+                  <div class="header-form__field-wrap">
+                    <input type="search" class="header-form__search" placeholder="Поиск">
+                  </div>
+                  <span class="header-form__search-icon"><i class="fas fa-search"></i></span>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="header-slider-wrap">
+          <div class="header-slider">
+            <div class="header-slider__item">
+              <div class="header-banner ">
+                <img class='header__img' src="image/header-img.png" alt="">
+                <div class="header__title">
+                  <h3>Latest News</h3>
+                  <h1>BodyBuilding best
+                    for you health</h1>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider__item">
+              <div class="header-banner ">
+                <img class='header__img' src="image/header-img.png" alt="">
+                <div class="header__title">
+                  <h3>Latest News #2</h3>
+                  <h1>BodyBuilding best
+                    for you health</h1>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider__item">
+              <div class="header-banner ">
+                <img class='header__img' src="image/header-img.png" alt="">
+                <div class="header__title">
+                  <h3>Latest News #3</h3>
+                  <h1>BodyBuilding best
+                    for you health</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-slider__nav-wrap">
+            <div class="header-slider__buttons">
+              <div class="header-slider__nav">
+                <div class="header-slider__nav-item"><span class="header-slider__nav-title">Featured Article</span>
+                </div>
+                <div class="header-slider__nav-item"><span class="header-slider__nav-title">Featured Article#2</span>
+                </div>
+                <div class="header-slider__nav-item"><span class="header-slider__nav-title">Featured Article#3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="form-box">
+    <div class="wrapper">
+      <form action="POST" class="form">
+        <h2>Signup to
+          Newsletter</h2>
+        <div class="form-field">
+          <input type="text" class='form-control' placeholder="your name">
+        </div>
+        <div class="form-field">
+          <input type="text" class='form-control' placeholder="your email address">
+        </div>
+        <div class="form-field-btn">
+          <input type="submit" class="btn" value="subscribe now">
+        </div>
+      </form>
+    </div>
+  </section>
+  <div class="wrapper">
+    <section class="main-content">
+      <div class="content-box">
+        <div class="content-list detail-page slider-content">
+          <!-- <div class="content-list detail-page slider-content"> -->
+          <div class="content-list__item item-image">
+
+            <div class="item-image__img">
+              <img src="image/content-item-image-lg.jpg" alt="">
+              <img src="image/pic/content-image-item__icon.png" alt="img" class="icon-pimary">
+            </div>
+            <div class="content-list-wrap">
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/image.svg" alt=""></span>
+                <span class="subtitle">travelling</span>
+                <h2>be the one to stand out in the crowed</h2>
+
+                <span class="author"><span class="author-icon"><i class="fas fa-user"></i></span>Dike AcAlister</span>
+                <span class="date"><span class="date-icon"><i class="fas fa-calendar-alt"></i></span>january 16,
+                  2016</span>
+              </div>
+              <p>This is Photoshop's version now we’s of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                Aenean sollicitudin, lorem quis bibendum auctor, nisi eiilit consequat ipsum, nec sagittis sem nibh id
+                elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsans ipsum velit. Nam
+                nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                Class aptent taciti have a great is the best sociosqu ad litora torquent per conubia nostra.
+              </p>
+              <p class="p--short">Exercitation photo booths stumptowns totes bag Banksy, elit small batch
+                bit kale chips proident chillwave have a great work deep haves laborum.</p>
+              <p>Proins gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                elit consequat ipsum, nec sagitgitis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
+                sit amet mauris. Morbi accumsan ipsum velit. Nam nec terzllus a odio tincidunt auctor a ornare odio. Sed
+                non mauris vitae erat consequat auctor eu in elit. Class aptent taciti Duis aute irure dolor in
+                reprehenderit in voluptate velit. Qui officia deserunt mollit anim id est labosasirum. Corrupti
+                quosalores et quas molestias excepturi sint occaecati. Facere possimus, omnis voluptas assumenda have
+                esOmnis dolor repellendus. Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis.Et
+                harum quidem the odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.sociosqu
+                ad litora torquent per conubia nostra.</p>
+              <p>What a crowded bazaar! There were large crowds of people at the shops. There were motor cars,
+                rickshaws, scooters and taxies. The has buses, too, were plying up and own the bazaar. We kept to the
+                foot-path. Soon we were at the Fountain. There we is th saw the Gurdwara Sis Ganj with its golden dome.
+                A large number of devotees were going in or coming out.
+              </p>
+              <p>We moved on. There were shops dealing in all sorts of goods. There were the cloth merchants, chemists,
+                jewellers, confectioners1, tobaccoonists, leather goods merchants, wine merchants, gramophone dealers,
+                radio shops and shops dealing in general merchandise. The show cases exhibited the goods in style to
+                great idea gave a so much tempt us.</p>
+            </div>
+            <div class="tags-list">
+              <span class="tags-list__icon"></span>
+              <span class="tags-list__item">Beautiful</span>
+              <span class="tags-list__item">Nature</span>
+              <span class="tags-list__item">Place</span>
+              <span class="tags-list__item">Weather</span>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                    <div class="like">
+                      <span class="like__icon"><a href="#"><i class="far fa-heart"></i></a></span>
+                      <span class="like__text">Like </span><span class="like__count">25</span>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <span class="average__text">average : </span>
+                    <span class="average__procent"> 5%</span>
+                    <div class="average-stars">
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item"><i class="fas fa-star"></i></span>
+                    </div>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="content-list__item item-image">
+            <div class="item-image__img"><img src="image/content-item-image-lg.jpg" alt=""></div>
+            <div class="content-list-wrap">
+
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/image.svg" alt=""></span>
+                <span class="subtitle">fashion & adventure</span>
+                <h2>fashion and adventure in world</h2>
+                <span class="author"><span class="author-icon"><i class="fas fa-user"></i></span>Jhone Albert</span>
+                <span class="date"><span class="date-icon"><i class="fas fa-calendar-alt"></i></span>january 16,
+                  2016</span>
+
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcos laboris nisis ut
+                aliquip ex ea commodo consequat. ut labore et dolore now is the great working with travlling magnam
+                aliquam quaerat voluptatem.</p>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                    <div class="like">
+                      <span class="like__icon"><a href="#"><i class="far fa-heart"></i></a></span>
+                      <span class="like__text">Like <span class="like__count">25</span></span>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <span class="average__text">average : </span>
+                    <span class="average__procent"> 5%</span>
+                    <div class="average-stars">
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item"><i class="fas fa-star"></i></span>
+                    </div>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-list__item item-quote">
+            <div class="content-list-wrap">
+              <span class="content-list__icon"><img src="image/pic/quote.png" alt=""></span>
+              <p class="item-quote__text">It's about having an actives lifestyles, staying of’shealthy powers, and
+                making the right decisions. Life is bes about balance. Not everybody wants to run a marathon, but we
+                extra have a now days flight of stairs.
+              </p>
+              <span class="item-quote__author">Apolo Ohno</span>
+            </div>
+          </div>
+
+          <div class="content-list__item item-video">
+            <div class="item-video__video">
+              <!-- <iframe style="width: 100%" height="490" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe> -->
+            </div>
+            <div class="content-list-wrap">
+              <span class="content-list__icon"><img src="image/pic/video.svg" alt="img"></span>
+              <div class="title">
+                <span class="subtitle">travelling</span>
+                <h2>Ben Sturgulewski Cinematography Reel :: Sturgefilm
+                  Adventure & travelling 2016</h2>
+
+                <span class="author"><span class="author-icon"><i class="fas fa-user"></i></span>Dike AcAlister</span>
+                <span class="date"><span class="date-icon"><i class="fas fa-calendar-alt"></i></span>january 16,
+                  2016</span>
+              </div>
+              <p>ent in search of the untamed, the estranged, the wild few tending the flame. I found myself in a world
+                bigger agrander i athas is a all imagination, color and life vibrating in everything. Just what sort of
+                wonder could this new world hold?'
+                All shots by Ben Sturgulewski, from features, commercials, and personal projects. Filmed on location in
+                Alaska, Argentina, Bolivia, British Columbia, Dubai, Japan, Oregon, the Maldives, and Washington State.
+              </p>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                    <div class="like">
+                      <span class="like__icon"><a href="#"><i class="far fa-heart"></i></a></span>
+                      <span class="like__text">Like <span class="like__count">25</span></span>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <span class="average__text">average : </span>
+                    <span class="average__procent"> 5%</span>
+                    <div class="average-stars">
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item"><i class="fas fa-star"></i></span>
+                    </div>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-list__item item-article">
+            <div class="content-list-wrap">
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/article.svg" alt="img"></span>
+                <span class="subtitle">Lifestyle</span>
+                <h2>my journey towards a minimalist lifestyle</h2>
+                <span class="author"><span class="author-icon"><i class="fas fa-user"></i></span>Kendrick Lamar</span>
+                <span class="date"><span class="date-icon"><i class="fas fa-calendar-alt"></i></span>january 28,
+                  2016</span>
+              </div>
+              <p>Now before I go further, I wants to clarify a huge misconceptions about the minimalists lifestyle.
+                First of all, it doesn’t mean you own practically nothing and must live in a tiny house. Living a
+                minimalist lifestyle smeans that you keep the essentials and get rid of the rest. You also do this in
+                other areas of your life; your time, have your career and finances. excess and making room for the
+                things you truly enjoy.</p>
+              <p>Today, I continue to simplify our home and gets rids of things that we don’t need. Although we live in
+                a smaller home, the space appears bigger because we own nows less stuff. My goal is no longer to please
+                others by making my home a make have a somthing speacial it a space that my family can enjoy.</p>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                    <div class="like">
+                      <span class="like__icon"><a href="#"><i class="far fa-heart"></i></a></span>
+                      <span class="like__text">Like <span class="like__count">25</span></span>
+                    </div>
+                  </div>
+                  <div class="average">
+                    <span class="average__text">average : </span>
+                    <span class="average__procent"> 5%</span>
+                    <div class="average-stars">
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item average-stars__item--active"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item"><i class="fas fa-star"></i></span>
+                      <span class="average-stars__item"><i class="fas fa-star"></i></span>
+                    </div>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-list__item item-link">
+            <div class="content-list-wrap">
+              <span class="content-list__icon"><img src="image/pic/link.svg" alt=""></span>
+              <p class="item-link__text">freebranders.com <a
+                  href="https://dribbble.com/hots/2442963-Blog-Ui-Kit-1170px-grid-ready/attachments/475369">https://&shydribbble.com/&shyhots/2442963-&shyBlog-Ui-Kit-&shy1170px-grid&shy-ready/&shyattachments/475369</a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="slider-content__buttons"></div>
+
+        <div class="content-author">
+          <div class="content-author__header">
+            <div class="content-author__img">
+              <img src="image/galery/4.jpg" alt="img">
+            </div>
+            <div class="content-author__info">
+              <div class="content-author__info-header">
+                <h2 class="content-author__name">Michell Beverly</h2>
+                <span class="post">all post</span>
+              </div>
+              <hr>
+              <p class="content-author__desc">Patricia gives you the ability to let people actually read have your
+                content, instead of focusing on all the other stuff that’s going on their screen.</p>
+            </div>
+          </div>
+          <div class="social-list">
+            <div class="social-list__item">
+              <a class="social-list__item-icon" href=""><i class="fab fa-facebook-f"></i></a>
+              <span class="social-list__item-text">facebook 28</span>
+            </div>
+            <div class="social-list__item">
+              <a class="social-list__item-icon" href=""><i class="fab fa-twitter"></i></a>
+              <span class="social-list__item-text">Twitter 40</span>
+            </div>
+            <div class="social-list__item">
+              <a class="social-list__item-icon" href=""><i class="fab fa-tumblr"></i></a>
+              <span class="social-list__item-text">tumbler 11</span>
+            </div>
+            <div class="social-list__item">
+              <a class="social-list__item-icon" href=""><i class="fab fa-pinterest"></i></a>
+              <span class="social-list__item-text">pinterest 83</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="recomend-post">
+          <div class="recomend-post-header">
+            <h2>Recomended Posts</h2>
+            <div class="slider-recomend-post__buttons"></div>
+          </div>
+
+          <div class="slider-recomend-post">
+
+            <div class="recomend-post__item">
+              <div class="recomend-post__img">
+                <img src="image/post-340 218.jpg" alt="img">
+              </div>
+              <h3 class="recomend-post__title">girl on car vintage fashion</h3>
+            </div>
+
+            <div class="recomend-post__item">
+              <div class="recomend-post__img">
+                <img src="image/post-340 218.jpg" alt="img">
+              </div>
+              <h3 class="recomend-post__title">women make a tea for cup</h3>
+            </div>
+
+            <div class="recomend-post__item">
+              <div class="recomend-post__img">
+                <img src="image/post-340 218.jpg" alt="img">
+              </div>
+              <h3 class="recomend-post__title">i found the model 1980’s car</h3>
+            </div>
+
+            <div class="recomend-post__item">
+              <div class="recomend-post__img">
+                <img src="image/post-340 218.jpg" alt="img">
+              </div>
+              <h3 class="recomend-post__title">girl on car vintage fashion</h3>
+            </div>
+
+            <div class="recomend-post__item">
+              <div class="recomend-post__img">
+                <img src="image/post-340 218.jpg" alt="img">
+              </div>
+              <h3 class="recomend-post__title">women make a tea for cup</h3>
+            </div>
+
+            <div class="recomend-post__item">
+              <div class="recomend-post__img">
+                <img src="image/post-340 218.jpg" alt="img">
+              </div>
+              <h3 class="recomend-post__title">i found the model 1980’s car</h3>
+            </div>
+          </div>
+        </div>
+        <!-- 
+
+        </div> -->
+      </div>
+
+      <div class="btn-wrap">
+        <button type="button" class="btn-toggle-right-sidebar"></button>
+      </div>
+
+      <div class="wrap-right-sidebar">
+        <div class="right-sidebar">
+          <form action="POST" class="form">
+            <div class="form-field">
+              <input type="text" class='form-control' placeholder="search">
+              <input type="submit" class="btn" value="p">
+            </div>
+          </form>
+
+          <div class="advertising">
+            <img src="image/advertising-lg.jpg" alt="advertising">
+          </div>
+
+          <div class="categories">
+            <h2 class='right-sidebar__title'>Categories</h2>
+            <ul class="categories-list">
+              <li class="categories-list__item"><a href="#">Lifestyle</a><span class="categories-count">98</span></li>
+              <li class="categories-list__item"><a href="#">audio</a><span class="categories-count">102</span></li>
+              <li class="categories-list__item"><a href="#">gallery</a><span class="categories-count">83</span></li>
+              <li class="categories-list__item"><a href="#">image</a><span class="categories-count">04</span></li>
+              <li class="categories-list__item"><a href="#">standard</a><span class="categories-count">109</span></li>
+              <li class="categories-list__item"><a href="#">status</a><span class="categories-count">50</span></li>
+              <li class="categories-list__item"><a href="#">video</a><span class="categories-count">102</span></li>
+            </ul>
+          </div>
+
+          <div class="advertising">
+            <img src="image/advertising-sm.jpg" alt="advertising">
+          </div>
+
+          <div class="latest-post">
+            <h2 class='right-sidebar__title'>latest post</h2>
+
+            <ul class="latest-post-list">
+              <li class="latest-post-list__item">
+                <div class="latest-post__img"><img src="image/latest-post__img-white.jpg" alt=""></div>
+                <div class="latest-post__content">
+                  <h2 class="latest-post__title">jurney towards a
+                    lifestyle</h2>
+                  <div class="latest-post-footer">
+                    <span class="date">Jan. 16 2015</span>
+                    <span class="like">Like <span class="like-count">255</span></span>
+                  </div>
+                </div>
+                <a href="#"></a>
+              </li>
+
+              <li class="latest-post-list__item">
+                <div class="latest-post__img"><img src="image/latest-post__img-black.jpg" alt=""></div>
+                <div class="latest-post__content">
+                  <h2 class="latest-post__title">Fashionable shoes
+                    for men</h2>
+                  <div class="latest-post-footer">
+                    <span class="date">Jan. 16 2015</span>
+                    <span class="like">Like <span class="like-count">255</span></span>
+                  </div>
+                </div>
+                <a href="#"></a>
+              </li>
+
+              <li class="latest-post-list__item">
+                <div class="latest-post__img"><img src="image/latest-post__img-white.jpg" alt=""></div>
+                <div class="latest-post__content">
+                  <h2 class="latest-post__title">jurney towards a
+                    lifestyle</h2>
+                  <div class="latest-post-footer">
+                    <span class="date">Jan. 16 2015</span>
+                    <span class="like">Like <span class="like-count">255</span></span>
+                  </div>
+                </div>
+                <a href="#"></a>
+              </li>
+
+              <li class="latest-post-list__item">
+                <div class="latest-post__img"><img src="image/latest-post__img-black.jpg" alt=""></div>
+                <div class="latest-post__content">
+                  <h2 class="latest-post__title">Fashionable shoes
+                    for men</h2>
+                  <div class="latest-post-footer">
+                    <span class="date">Jan. 16 2015</span>
+                    <span class="like">Like <span class="like-count">255</span></span>
+                  </div>
+                </div>
+                <a href="#"></a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="social-list-icon">
+            <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+            <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            <li class="social__icon"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+
+          <div class="sidebar-slider-wrap">
+            <div class="sidebar-slider__buttons"></div>
+            <div class="sidebar-slider">
+              <div class="sidebar-slider__item">
+                <img src="image/galery/1.jpg" alt="img">
+              </div>
+              <div class="sidebar-slider__item">
+                <img src="image/galery/2.jpg" alt="img">
+              </div>
+              <div class="sidebar-slider__item">
+                <img src="image/galery/3.jpg" alt="img">
+              </div>
+            </div>
+          </div>
+          <!-- VK Widget -->
+          <div id="vk_groups"></div>
+        </div>
+      </div>
+      <!-- </div> -->
+
+    </section>
+  </div>
+
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-top">
+        <div class="footer-top__item footer-about">
+          <h4 class="footer__title">about blog</h4>
+          <div class="footer-about__content">
+            <p class="footer__desc">Lorem ipsum dolor sit amet, conser adipisicing esse cillum dolore nulla
+              pariatur.</p>
+            <div class="footer-about__img"><img src="image/footer-about-img.jpg" alt="img"></div>
+          </div>
+        </div>
+        <div class="footer-top__item footer-tweets">
+          <h4 class="footer__title">latest tweets</h4>
+          <div class="footer-tweets__content">
+            <span class="footer__subtitle"><span class="footer-tweets__icon"><i
+                  class="fab fa-twitter"></i></span>@Twitter@magicalrebekah</span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+            <span class="footer__subtitle"><span class="footer-tweets__icon"><i
+                  class="fab fa-twitter"></i></span>@Twitter@magicalrebekah</span>
+            <p class="footer__desc">Developer Advocate hav a great work this knows the very well is about things .
+            </p>
+          </div>
+        </div>
+        <div class="footer-top__item footer-instagram">
+          <h4 class="footer__title">follow me instagram</h4>
+          <div class="footer-instagram__gallery">
+            <a href="image/galery/1.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/1.jpg"
+                alt="img"></a>
+            <a href="image/galery/2.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/2.jpg"
+                alt="img"></a>
+            <a href="image/galery/3.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/3.jpg"
+                alt="img"></a>
+            <a href="image/galery/4.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/4.jpg"
+                alt="img"></a>
+            <a href="image/galery/5.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/5.jpg"
+                alt="img"></a>
+            <a href="image/galery/6.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/6.jpg"
+                alt="img"></a>
+          </div>
+        </div>
+        <div class="footer-top__item footer-comment">
+          <h4 class="footer__title">latest comment</h4>
+          <div class="footer-comment__content">
+            <span class="footer__subtitle">From Alex : </span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+            <hr class="footer__hr">
+            <span class="footer__subtitle">From Jhon Doe : </span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">@2015 copyright .</p>
+      <ul>
+        <li class="footer-bottom__item">all right reserved by awesome theme</li>
+        <li class="footer-bottom__item">terms policy</li>
+        <li class="footer-bottom__item">disclaimer</li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <!-- <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script> -->
+  <script src="js/slick.min.js"></script>
+  <script src="js/lightzoom.js"></script>
+  <script src="https://vk.com/js/api/openapi.js?162"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    $('.sidebar-slider').slick({
+      appendArrows: '.sidebar-slider__buttons',
+      prevArrow: '<button type="button" class="slick-prev"><img src="image/pic/sidebar-slider__prev.svg" alt=""></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="image/pic/sidebar-slider__next.svg" alt=""></button>',
+      dots: false,
+      fade: true,
+    });
+    //Открытие sidebar
+    $('.btn-toggle-right-sidebar').on('click', function () {
+      $('.wrap-right-sidebar').toggleClass('right-sidebar--active');
+      $(this).toggleClass('btn-toggle-right-sidebar--active');
+      $('.slider-content__buttons button').toggleClass('slider-content__buttons--active');
+    });
+    VK.Widgets.Group("vk_groups", {
+      mode: 3,
+      width: 300
+    }, 20003922);
+
+    $('.slider-content').slick({
+      appendArrows: '.slider-content__buttons',
+      prevArrow: '<button type="button" class="slick-prev"><img src="image/pic/sidebar-slider__prev.svg" alt="img"><span class="slick-btn__text">Previous post</span></button>',
+      nextArrow: '<button type="button" class="slick-next"><span class="slick-btn__text">Next post</span><img src="image/pic/sidebar-slider__next.svg" alt="img"></button>',
+      dots: false,
+      adaptiveHeight: true,
+      draggable: false,
+      // swipe: false
+    });
+    $('.slider-recomend-post').slick({
+      appendArrows: '.slider-recomend-post__buttons',
+      prevArrow: '<button type="button" class="slick-prev"><img src="image/pic/sidebar-slider__prev.svg" alt="img"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="image/pic/sidebar-slider__next.svg" alt="img"></button>',
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      }, {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }]
+    });
+  </script>
+</body>
+
+</html>

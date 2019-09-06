@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home page</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/lightzoom.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700|Mrs+Saint+Delafield|Open+Sans:300,400,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/code-fx/Pure-CSS3-Animated-Border@V1.0/css/animated-border/animated-border.min.css" /> -->
+
+
+</head>
+
+<body>
+  <header>
+    <div class="header-bg"></div>
+    <div class="wrapper header-wrap ">
+      <div class="header-content">
+        <div class="header-top">
+          <div class="navigation">
+            <button type="button" class="navigation-btn-open"></button>
+            <nav class="navigation-menu">
+              <button type="button" class="navigation-btn-close"><i class="fas fa-times"></i></button>
+              <ul>
+                <li class="navigation-menu__item"><a href="index.html">Home page 1</a></li>
+                <li class="navigation-menu__item"><a href="02-Home-Page.html">Home page 2</a></li>
+                <li class="navigation-menu__item"><a href="detail-page.html">Detail page</a></li>
+                <li class="navigation-menu__item"><a href="about-me.html">About Me</a></li>
+                <li class="navigation-menu__item"><a href="contact-us.html">Contact us</a></li>
+                <li class="navigation-menu__item"><a href="404.html">404</a></li>
+              </ul>
+              <ul class="navigation-menu__icon-list">
+                <li class="navigation-menu__icon"><a href="#"><i class="fas fa-rss"></i></a></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-tumblr"></i></a></i></li>
+                <li class="navigation-menu__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="logo"><img src="image/logo.png" alt="logo"></div>
+          <ul class="header__list-icon">
+            <li class="header__icon"><a href="#"><i class="fas fa-rss"></i></a></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-tumblr"></i></a></i></li>
+            <li class="header__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="header__icon header__icon-search">
+              <form action="post" class="header-form">
+                <div class="header-form__field">
+                  <div class="header-form__field-wrap">
+                    <input type="search" class="header-form__search" placeholder="Поиск">
+                  </div>
+                  <span class="header-form__search-icon"><i class="fas fa-search"></i></span>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="header-slider-wrap">
+          <div class="header-slider">
+            <div class="header-slider__item">
+              <div class="header-banner ">
+                <img class='header__img' src="image/header-img.png" alt="">
+                <div class="header__title">
+                  <h3>Latest News</h3>
+                  <h1>BodyBuilding best
+                    for you health</h1>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider__item">
+              <div class="header-banner ">
+                <img class='header__img' src="image/header-img.png" alt="">
+                <div class="header__title">
+                  <h3>Latest News #2</h3>
+                  <h1>BodyBuilding best
+                    for you health</h1>
+                </div>
+              </div>
+            </div>
+            <div class="header-slider__item">
+              <div class="header-banner ">
+                <img class='header__img' src="image/header-img.png" alt="">
+                <div class="header__title">
+                  <h3>Latest News #3</h3>
+                  <h1>BodyBuilding best
+                    for you health</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-slider__nav-wrap">
+            <div class="header-slider__buttons">
+              <div class="header-slider__nav">
+                <div class="header-slider__nav-item"><span class="header-slider__nav-title">Featured Article</span>
+                </div>
+                <div class="header-slider__nav-item"><span class="header-slider__nav-title">Featured Article#2</span>
+                </div>
+                <div class="header-slider__nav-item"><span class="header-slider__nav-title">Featured Article#3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="form-box">
+    <div class="wrapper">
+      <form action="POST" class="form">
+        <h2>Signup to
+          Newsletter</h2>
+        <div class="form-field">
+          <input type="text" class='form-control' placeholder="your name">
+        </div>
+        <div class="form-field">
+          <input type="text" class='form-control' placeholder="your email address">
+        </div>
+        <div class="form-field-btn">
+          <input type="submit" class="btn" value="subscribe now">
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="content-box">
+    <div class="wrapper">
+      <div class="content-list masonry-list">
+        <div class="masonry-item">
+          <div class="content-list__item item-article persent-size">
+            <div class="content-list-wrap">
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/article.svg" alt="img"></span>
+                <span class="subtitle">travelling</span>
+                <h2>Travel besT Adventure</h2>
+                <span class="date">january 25, 2016</span>
+              </div>
+              <p>Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et
+                dolhvaliqua. Ut enim vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is
+                the
+                have great work.</p>
+            </div>
+            <div class="content-btn-wrap">
+              <span class="content-btn__top-line"></span>
+              <span class="content-btn__right-line"></span>
+              <span class="content-btn__bottom-line"></span>
+              <span class="content-btn__left-line"></span>
+              <button type="button" class="content-btn">Read more</button>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item">
+          <div class="content-list__item item-image persent-size">
+            <div class="item-image__img"><img src="image/content-item-img.png" alt=""></div>
+            <div class="content-list-wrap">
+
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/image.svg" alt=""></span>
+                <span class="subtitle">travelling</span>
+                <h2>Standard Image Post </h2>
+                <span class="date">january 25, 2016</span>
+              </div>
+
+            </div>
+            <div class="content-btn-wrap">
+              <span class="content-btn__top-line"></span>
+              <span class="content-btn__right-line"></span>
+              <span class="content-btn__bottom-line"></span>
+              <span class="content-btn__left-line"></span>
+              <button type="button" class="content-btn">Read more</button>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item">
+          <div class=" content-list__item item-article persent-size">
+            <div class="content-list-wrap">
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/article.svg" alt="img"></span>
+                <span class="subtitle">fashion</span>
+                <h2>Simple post style</h2>
+                <span class="date">january 25, 2016</span>
+              </div>
+              <p>Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have great
+                work.</p>
+            </div>
+            <div class="content-btn-wrap">
+              <span class="content-btn__top-line"></span>
+              <span class="content-btn__right-line"></span>
+              <span class="content-btn__bottom-line"></span>
+              <span class="content-btn__left-line"></span>
+              <button type="button" class="content-btn">Read more</button>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item">
+          <div class="content-list__item item-default persent-size">
+            <div class="content-list-wrap">
+
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item">
+          <div class="content-list__item item-default persent-size">
+            <div class="content-list-wrap">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item">
+          <div class="content-list__item item-quote">
+            <div class="content-list-wrap">
+              <span class="content-list__icon"><img src="image/pic/quote.png" alt=""></span>
+              <p class="item-quote__text">As per Lorm ipsum dolor sitamet,
+                consectetur adipisicing elits, sed do Now eiusmod tempor havei ut labores et dolore magna aliqusa. Ut
+                wenim ad minim veniam, quis
+                its a snostrud now is the ullamco
+                aliquip ex ea commodo. </p>
+              <span class="item-quote__author">Nathalia Alexy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item">
+          <div class="content-list__item item-image persent-size">
+            <div class="item-image__img"><img src="image/content-item-img.png" alt=""></div>
+            <div class="content-list-wrap">
+
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/image.svg" alt=""></span>
+                <span class="subtitle">adventures</span>
+                <h2>awesome Gallery Post</h2>
+                <span class="date">january 25, 2016</span>
+              </div>
+
+            </div>
+            <div class="content-btn-wrap">
+              <span class="content-btn__top-line"></span>
+              <span class="content-btn__right-line"></span>
+              <span class="content-btn__bottom-line"></span>
+              <span class="content-btn__left-line"></span>
+              <button type="button" class="content-btn">Read more</button>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item">
+          <div class="content-list__item item-article persent-size">
+            <!-- <div class="item-image__img"></div> -->
+            <div class="content-list-wrap">
+
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/article.svg" alt="img"></span>
+                <span class="subtitle">adventures</span>
+                <h2>Without image post</h2>
+                <span class="date">january 25, 2016</span>
+              </div>
+              <p>Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et
+                dolhvaliqua. Ut enim vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is
+                the
+                have great work.</p>
+            </div>
+            <div class="content-btn-wrap">
+              <span class="content-btn__top-line"></span>
+              <span class="content-btn__right-line"></span>
+              <span class="content-btn__bottom-line"></span>
+              <span class="content-btn__left-line"></span>
+              <button type="button" class="content-btn">Read more</button>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item">
+          <div class="content-list__item item-usual persent-size">
+            <div class="item-usual__bg-img"><img src="image/content-item-bg.jpg" alt=""></div>
+            <div class="content-list-wrap">
+              <div class="title">
+                <span class="subtitle">travelling</span>
+                <h2>Travel besT Adventure</h2>
+                <span class="date">january 25, 2016</span>
+              </div>
+              <p>Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et
+                dolhvaliqua. Ut enim vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo
+                tehampor incididunt uts laboasre etsa
+                iusmod tehampor incididunt uts havlaboasre et dolhvaliqua. Ut enim vem,
+                choice is the have great work.</p>
+            </div>
+            <div class="content-btn-wrap">
+              <span class="content-btn__top-line"></span>
+              <span class="content-btn__right-line"></span>
+              <span class="content-btn__bottom-line"></span>
+              <span class="content-btn__left-line"></span>
+              <button type="button" class="content-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item">
+          <div class="content-list__item item-video persent-size">
+            <div class="item-video__video">
+              <iframe style="width: 100%" height="258" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="content-list-wrap">
+              <span class="content-list__icon"><img src="image/pic/video.svg" alt="img"></span>
+              <div class="title">
+                <span class="subtitle">Designer</span>
+                <h2>Video Image Post Style</h2>
+                <span class="date">january 25, 2016</span>
+              </div>
+              <p>A CONAN staffer is learning the rules of the in road, with a little help from Look out, fellow drivers!
+              </p>
+            </div>
+            <div class="content-list__footer">
+              <div class="content-list-wrap">
+                <div class="social">
+                  <div class="comment">
+                    <span class="comment__icon"><a href=""><i class="far fa-comments"></i></a></i></span><span
+                      class="comment__text"><span class="comment__count">No</span>comment</span>
+                  </div>
+                  <ul class="social-list-icon">
+                    <li class="social__icon"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__icon"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="masonry-item persent-size">
+          <div class="content-list__item item-link">
+            <div class="content-list-wrap">
+              <span class="content-list__icon"><img src="image/pic/link.svg" alt=""></span>
+              <p class="item-link__text"><a
+                  href="http://www.abcdomainname.com/screen/discovery">http://www.abcdomainname.com/
+                  screen/discovery</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="content-list__item item-blog">
+            <div class="content-list-wrap">
+              <span class="content-list__icon"><img src="image/pic/blog.svg" alt=""></span>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-item">
+          <div class=" content-list__item item-music persent-size">
+            <div class="content-list-wrap">
+              <div class="title">
+                <span class="content-list__icon"><img src="image/pic/music.svg" alt="img"></span>
+                <span class="subtitle">Designer</span>
+                <h2>Video Image Post Style</h2>
+                <span class="date">january 25, 2016</span>
+              </div>
+
+              <div class="item-music-wrap">
+                <button type='button' class="item-music__play"><img src="image/pic/music-play.svg" alt="img"></button>
+                <h3 class="item-music_title">Название песни</h3>
+                <div class="item-music__controls">
+                  <button class="item-music__prev"><img src="image/pic/music-prev.svg" alt="img"></button>
+                  <div class="music-bar">
+                    <div class="music-bar__fill"></div>
+                    <div class="music-bar__fill-icon"></div>
+                  </div>
+                  <button class="item-music__next"><img src="image/pic/music-next.svg" alt="img"></button>
+                </div> 
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-top">
+        <div class="footer-top__item footer-about">
+          <h4 class="footer__title">about blog</h4>
+          <div class="footer-about__content">
+            <p class="footer__desc">Lorem ipsum dolor sit amet, conser adipisicing esse cillum dolore nulla
+              pariatur.</p>
+            <div class="footer-about__img"><img src="image/footer-about-img.jpg" alt="img"></div>
+          </div>
+        </div>
+        <div class="footer-top__item footer-tweets">
+          <h4 class="footer__title">latest tweets</h4>
+          <div class="footer-tweets__content">
+            <span class="footer__subtitle"><span class="footer-tweets__icon"><i
+                  class="fab fa-twitter"></i></span>@Twitter@magicalrebekah</span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+            <span class="footer__subtitle"><span class="footer-tweets__icon"><i
+                  class="fab fa-twitter"></i></span>@Twitter@magicalrebekah</span>
+            <p class="footer__desc">Developer Advocate hav a great work this knows the very well is about things .
+            </p>
+          </div>
+        </div>
+        <div class="footer-top__item footer-instagram">
+          <h4 class="footer__title">follow me instagram</h4>
+          <div class="footer-instagram__gallery">
+            <a href="image/galery/1.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/1.jpg"
+                alt="img"></a>
+            <a href="image/galery/2.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/2.jpg"
+                alt="img"></a>
+            <a href="image/galery/3.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/3.jpg"
+                alt="img"></a>
+            <a href="image/galery/4.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/4.jpg"
+                alt="img"></a>
+            <a href="image/galery/5.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/5.jpg"
+                alt="img"></a>
+            <a href="image/galery/6.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/6.jpg"
+                alt="img"></a>
+          </div>
+        </div>
+        <div class="footer-top__item footer-comment">
+          <h4 class="footer__title">latest comment</h4>
+          <div class="footer-comment__content">
+            <span class="footer__subtitle">From Alex : </span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+            <hr class="footer__hr">
+            <span class="footer__subtitle">From Jhon Doe : </span>
+            <p class="footer__desc">Developer Advocate @heyval isaiyou knows the very well is about things .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">@2015 copyright .</p>
+      <ul>
+        <li class="footer-bottom__item">all right reserved by awesome theme</li>
+        <li class="footer-bottom__item">terms policy</li>
+        <li class="footer-bottom__item">disclaimer</li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <!-- <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script> -->
+  <script src="js/slick.min.js"></script>
+  <script src="js/lightzoom.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    //Masonry плитка
+    var $grid = $('.masonry-list');
+    $grid.masonry({
+      // columnWidth: 360,
+      itemSelector: '.masonry-item',
+      // gutter: 30,
+      horizontalOrder: true,
+      // columnWidth: '.content-list__item',
+      // columnWidth: '.persent-size',
+      // percentPosition: true
+    });
+$('.lightzoom').lightzoom({
+      speed: 400, // скорость появления
+      imgPadding: 10, // значение отступа у изображения
+      overlayOpacity: '0.5', // прозрачность фона (от 0 до 1)
+      viewTitle: false, // true, если надо показывать подпись к изобажению
+      isOverlayClickClosing: true, // true, если надо закрывать окно при клике по затемненной области
+      isWindowClickClosing: true, // true, если надо закрывать окно при клике по любой области
+      isEscClosing: true // true, если надо закрывать окно при нажатии на кнопку Esc
+    });
+  </script>
+</body>
+
+</html>
