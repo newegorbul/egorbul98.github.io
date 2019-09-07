@@ -386,7 +386,8 @@
           <div class="content-list__item item-video persent-size">
             <div class="item-video__video">
               <iframe style="width: 100%" height="258" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
             <div class="content-list-wrap">
               <span class="content-list__icon"><img src="image/pic/video.svg" alt="img"></span>
@@ -455,7 +456,7 @@
                     <div class="music-bar__fill-icon"></div>
                   </div>
                   <button class="item-music__next"><img src="image/pic/music-next.svg" alt="img"></button>
-                </div> 
+                </div>
               </div>
 
             </div>
@@ -531,7 +532,8 @@
 
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-  <script src="js/jquery-3.4.1.js"></script>
+  <!-- <script src="js/jquery-3.4.1.js"></script> -->
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
   <!-- <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script> -->
   <script src="js/slick.min.js"></script>
@@ -539,26 +541,28 @@
   <script src="js/custom.js"></script>
 
   <script>
+    $(document).ready(function () {
+      var $grid = $('.masonry-list');
+      $grid.masonry({
+        // columnWidth: 360,
+        itemSelector: '.masonry-item',
+        // gutter: 30,
+        horizontalOrder: true,
+        // columnWidth: '.content-list__item',
+        // columnWidth: '.persent-size',
+        // percentPosition: true
+      });
+      $('.lightzoom').lightzoom({
+        speed: 400, // скорость появления
+        imgPadding: 10, // значение отступа у изображения
+        overlayOpacity: '0.5', // прозрачность фона (от 0 до 1)
+        viewTitle: false, // true, если надо показывать подпись к изобажению
+        isOverlayClickClosing: true, // true, если надо закрывать окно при клике по затемненной области
+        isWindowClickClosing: true, // true, если надо закрывать окно при клике по любой области
+        isEscClosing: true // true, если надо закрывать окно при нажатии на кнопку Esc
+      });
+    });
     //Masonry плитка
-    var $grid = $('.masonry-list');
-    $grid.masonry({
-      // columnWidth: 360,
-      itemSelector: '.masonry-item',
-      // gutter: 30,
-      horizontalOrder: true,
-      // columnWidth: '.content-list__item',
-      // columnWidth: '.persent-size',
-      // percentPosition: true
-    });
-$('.lightzoom').lightzoom({
-      speed: 400, // скорость появления
-      imgPadding: 10, // значение отступа у изображения
-      overlayOpacity: '0.5', // прозрачность фона (от 0 до 1)
-      viewTitle: false, // true, если надо показывать подпись к изобажению
-      isOverlayClickClosing: true, // true, если надо закрывать окно при клике по затемненной области
-      isWindowClickClosing: true, // true, если надо закрывать окно при клике по любой области
-      isEscClosing: true // true, если надо закрывать окно при нажатии на кнопку Esc
-    });
   </script>
 </body>
 

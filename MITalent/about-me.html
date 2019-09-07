@@ -130,7 +130,8 @@
           <form action="POST" class="form">
             <div class="form-field">
               <input type="text" class='form-control' placeholder="search">
-              <button type="submit" class="btn"><span class="sidebar-search__icon"><i class="fas fa-search"></i></span></button>
+              <button type="submit" class="btn"><span class="sidebar-search__icon"><i
+                    class="fas fa-search"></i></span></button>
             </div>
           </form>
 
@@ -278,16 +279,19 @@
 
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/lightzoom.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/custom.js"></script>
 
   <script>
-     $('.btn-toggle-right-sidebar').on('click', function () {
+    $(document).ready(function () {
+      $('.btn-toggle-right-sidebar').on('click', function () {
       $('.wrap-right-sidebar').toggleClass('right-sidebar--active');
       $(this).toggleClass('btn-toggle-right-sidebar--active');
     });
+    });
+   
   </script>
 </body>
 

@@ -29,20 +29,22 @@ $screen375px: 375px;
   }
 }
 
-@media(max-width: $screenLG) {//1200 1199
-  .contacts{
+@media(max-width: $screenLG) {
+
+  //1200 1199
+  .contacts {
     max-height: 100%;
     flex-direction: column;
 
-    .contacts__map{
+    .contacts__map {
       max-width: 100%;
     }
 
-    .contacts__desc{
+    .contacts__desc {
       min-width: auto;
     }
   }
-  
+
   .form-box {
     height: auto;
 
@@ -113,6 +115,25 @@ $screen375px: 375px;
 @media (max-width: $screenXM) {
 
   //992 991
+  .error {
+
+    .error__code {
+      .error__number {
+        font-size: 210px;
+      }
+
+      .error__text {
+        letter-spacing: 7px;
+        height: 21px;
+        padding-top: 2px;
+      }
+    }
+
+    .form-error {
+      width: 90%;
+    }
+  }
+
   .content-list.detail-page {
     .content-list__item .social .social-list-icon li {
       margin-right: 16px;
@@ -261,14 +282,17 @@ $screen375px: 375px;
 }
 
 @media (max-width: $screenM) {
+
   //768 767
-  .content-list.content-list-page-two .content-list__item .social .social-list-icon{
+  .content-list.content-list-page-two .content-list__item .social .social-list-icon {
     margin-top: 16px;
     margin-bottom: 16px;
-    li a{
+
+    li a {
       font-size: 16px;
     }
-  } 
+  }
+
   .content-list.detail-page {
     .content-list__item {
       .title {
@@ -285,6 +309,7 @@ $screen375px: 375px;
       .comment {
         order: 2;
         padding-top: 10px;
+
         .like {
           margin-left: 10px;
         }
@@ -300,7 +325,8 @@ $screen375px: 375px;
           order: 3;
         }
       }
-      .average{
+
+      .average {
         padding-top: 0;
       }
 
@@ -444,16 +470,17 @@ $screen375px: 375px;
     }
 
     .footer-instagram {
-      .footer-instagram__gallery{
+      .footer-instagram__gallery {
         height: auto;
-        a{
+
+        a {
           width: 50%;
           height: 120px;
         }
       }
     }
   }
-  
+
 
 
 
@@ -462,15 +489,17 @@ $screen375px: 375px;
 @media (max-width: $screen600) {
 
   .form-message {
-    .form-row{
+    .form-row {
       flex-direction: column;
       margin-bottom: 20px;
-      .form-field{
+
+      .form-field {
         width: 100%;
         margin-right: 0;
       }
     }
   }
+
   .recomend-post {
     .slider-recomend-post__buttons {
       margin-top: 10px;
@@ -517,20 +546,54 @@ $screen375px: 375px;
 }
 
 @media (max-width: $screenSM) {
-
   //480 479
-  .contacts{
-    h2{
+
+  .error {
+    .error__code {
+      .error__number {
+        font-size: 138px;
+      }
+
+      .error__text {
+        position: static;
+        display: block;
+        // margin: auto;
+        width: 100%;
+        // text-align: center;
+        letter-spacing: 2px;
+        line-height: 20px;
+        font-size: 18px;
+        transform: none;
+      }
+
+
+    }
+
+    .form-error {
+      width: 100%;
+
+      .form-control {
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  .contacts {
+    h2 {
       font-size: 18px;
       margin-bottom: 20px;
     }
-    .contacts__desc{
-      margin-top: 20px;  
+
+    .contacts__desc {
+      margin-top: 20px;
     }
-    .hr{
+
+    .hr {
       width: 100%;
     }
   }
+
   .content-list.detail-page {
     .content-list__item {
       .title {
@@ -690,7 +753,7 @@ $screen375px: 375px;
       right: -390px;
       overflow-y: scroll;
       width: 100%;
-      max-width: 360px;
+      max-width: 100%;
     }
 
     .right-sidebar {

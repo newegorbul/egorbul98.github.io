@@ -556,7 +556,7 @@
 
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-  <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/masonry.pkgd.min.js"></script>
   <!-- <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script> -->
   <script src="js/slick.min.js"></script>
@@ -564,7 +564,8 @@
   <script src="https://vk.com/js/api/openapi.js?162"></script>
   <script src="js/custom.js"></script>
   <script>
-    $('.sidebar-slider').slick({
+    $(document).ready(function () {
+      $('.sidebar-slider').slick({
       appendArrows: '.sidebar-slider__buttons',
       prevArrow: '<button type="button" class="slick-prev"><img src="image/pic/sidebar-slider__prev.svg" alt=""></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="image/pic/sidebar-slider__next.svg" alt=""></button>',
@@ -582,6 +583,8 @@
       mode: 3,
       width: 300
     }, 20003922);
+    });
+    
   </script>
 </body>
 
