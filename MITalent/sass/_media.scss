@@ -711,10 +711,24 @@ $screen375px: 375px;
     }
 
     .content-list__item {
-      .title h2 {
-        font-size: 22px;
-        line-height: 36px;
+      .title {
+
+        h2 {
+          font-size: 22px;
+          line-height: 36px;
+        }
+
+        .author,
+        .date {
+          display: block;
+        }
+
+        .author {
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
       }
+
 
       .comment {
 
@@ -743,15 +757,13 @@ $screen375px: 375px;
         margin-top: 30px;
       }
     }
+
+
   }
 
   .main-content {
     .wrap-right-sidebar {
-      position: absolute;
-      right: 0;
-      top: 0;
-      right: -390px;
-      overflow-y: scroll;
+      right: -440px;
       width: 100%;
       max-width: 100%;
     }
