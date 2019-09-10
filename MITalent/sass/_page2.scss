@@ -18,24 +18,20 @@
 
 
   .btn-wrap {
-    top: 0;
-    position: absolute;
+    position: fixed;
     z-index: 4;
     width: 60px;
-    height: 100%;
     margin-top: 60px;
-    right: 0;
+    right: 15px;
     display: none;
     opacity: 0.6;
+    bottom: 30px;
 
 
     .btn-toggle-right-sidebar {
-      top: 0;
-      position: sticky;
       // z-index: 4;
       border: 0;
       outline: none;
-
       background-color: #212121;
       background: url('../image/pic/menu.svg') no-repeat center #212121;
       color: #fff;

@@ -7,9 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home page 2</title>
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/lightzoom.css">
   <link rel="stylesheet" href="css/style.css">
 
   <link
@@ -577,12 +574,14 @@
     $('.btn-toggle-right-sidebar').on('click', function () {
       $('.wrap-right-sidebar').toggleClass('right-sidebar--active');
       $(this).toggleClass('btn-toggle-right-sidebar--active');
-      // $('.btn-wrap').toggleClass('btn-wrap--active');
+      $('.navigation').toggleClass('navigation--z-index');
     });
+
     VK.Widgets.Group("vk_groups", {
       mode: 3,
       width: 300
     }, 20003922);
+
     });
     
   </script>

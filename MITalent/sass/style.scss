@@ -45,6 +45,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  font-display: swap;
 }
 
 ul {
@@ -382,6 +383,10 @@ h2 {
     .navigation-menu--active {
       left: -75vw;
     }
+  }
+
+  .navigation--z-index{
+    z-index: 3;
   }
 
   .logo {
