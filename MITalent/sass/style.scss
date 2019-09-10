@@ -1,19 +1,22 @@
 // fonts
-@mixin name {}
 
 @mixin fontHind {
+  font-display: swap;
   font-family: 'Hind', sans-serif;
 }
 
 @mixin fontMontserrat {
+  font-display: swap;
   font-family: 'Montserrat', sans-serif;
 }
 
 @mixin fontOpenSans {
+  font-display: swap;
   font-family: 'Open Sans', sans-serif;
 }
 
 @mixin fontMrsSaintDelafield {
+  font-display: swap;
   font-family: 'Mrs Saint Delafield', cursive;
 }
 
