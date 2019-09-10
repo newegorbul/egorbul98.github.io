@@ -277,6 +277,15 @@ $screen375px: 375px;
 }
 
 @media (max-width: $screenM) {
+  .header-banner {
+    .header__img-small {
+      display: block;
+    }
+
+    .header__img-big {
+      display: none;
+    }
+  }
 
   //768 767
   .content-list.content-list-page-two .content-list__item .social .social-list-icon {

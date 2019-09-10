@@ -430,6 +430,11 @@ h2 {
     position: absolute;
     z-index: -1;
     height: 100%;
+    display: block;
+  }
+
+  .header__img-small{
+    display: none;
   }
 
   .header__title {
