@@ -19,6 +19,15 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
 		integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<script src="js/wow.min.js"></script>
+	<script>
+		var wow = new WOW({
+			offset: 40, // расстояние в пикселях от нижнего края браузера до верхней границы элемента, необходимое для начала анимации (по умолчанию, 0)
+		});
+		wow.init();
+	</script>
 </head>
 
 <body>
@@ -67,7 +76,7 @@
 	</section>
 	<section id='about' class="about">
 		<div class="wrapper">
-			<div class="heading">
+			<div class="heading wow fadeInDown">
 				<h2>About</h2>
 				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
 					elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
@@ -75,7 +84,7 @@
 			</div>
 
 			<div class="about-wrap">
-				<div class="about-wrap-content">
+				<div class="about-wrap-content wow fadeInLeft" data-wow-delay='0.1s'>
 					<div class="about-wrap-content__icon"><i class="far fa-lightbulb"></i></div>
 					<div class="about-wrap-content__text">
 						<h6>Our Story</h6>
@@ -88,7 +97,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="about-wrap-img">
+				<div class="about-wrap-img wow fadeInLeft">
 					<img src="img/about-img.jpg" alt="">
 					<span class="about-wrap-img__icon">
 						<i class="fas fa-camera"></i>
@@ -97,11 +106,11 @@
 			</div>
 			<div class="hr"></div>
 			<div class="box-skills">
-				<div class="box-skills__item box-skills__item--img">
+				<div class="box-skills__item box-skills__item--img wow fadeInLeft">
 					<img src="img/box-skills-img.png" alt="">
 				</div>
 				<div class="box-skills__item box-skills__item--content">
-					<div class="about-wrap-content">
+					<div class="about-wrap-content wow fadeInRight">
 						<div class="about-wrap-content__icon"><i class="fas fa-sliders-h"></i></div>
 						<div class="about-wrap-content__text">
 							<h6>Our Skills</h6>
@@ -113,7 +122,7 @@
 
 
 					</div>
-					<div class="box-bars">
+					<div class="box-bars wow fadeInRight" data-wow-delay="0.1s">
 						<div class="bar">
 							<div class="bar__title">Design <span class="slesh">/</span><span class="procent"> 88%</span>
 							</div>
@@ -168,14 +177,14 @@
 	</section>
 	<section id='team' class="box-team">
 		<div class="wrapper">
-			<div class="heading">
+			<div class="heading wow fadeInDown">
 				<h2>Team</h2>
 				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
 					elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
 					sit amet </p>
 			</div>
 			<div class="team-list">
-				<div class="team-list__item">
+				<div class="team-list__item wow fadeInLeft" data-wow-delay="0.3s">
 					<div class="team-list__img"><i class="fas fa-user"></i></div>
 					<h6>John Doe</h6>
 					<span class="team-list__job">Founder</span>
@@ -189,7 +198,7 @@
 						<a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
 					</div>
 				</div>
-				<div class="team-list__item">
+				<div class="team-list__item wow fadeInLeft" data-wow-delay="0.2s">
 					<div class="team-list__img"><i class="fas fa-user"></i></div>
 					<h6>Jesmin Doe</h6>
 					<span class="team-list__job">Designer</span>
@@ -202,7 +211,7 @@
 						<a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
 					</div>
 				</div>
-				<div class="team-list__item">
+				<div class="team-list__item wow fadeInLeft" data-wow-delay="0.1s">
 					<div class="team-list__img"><i class="fas fa-user"></i></div>
 					<h6>Martin Doe</h6>
 					<span class="team-list__job">Developer</span>
@@ -215,7 +224,7 @@
 						<a href="#" class="social__link"><i class="fab fa-linkedin-in"></i></a>
 					</div>
 				</div>
-				<div class="team-list__item">
+				<div class="team-list__item wow fadeInLeft">
 					<div class="team-list__img"><i class="fas fa-user"></i></div>
 					<h6>Anthony Doe</h6>
 					<span class="team-list__job">Photographer</span>
@@ -257,26 +266,26 @@
 	</section>
 	<section id='services' class="services">
 		<div class="wrapper">
-			<div class="heading">
+			<div class="heading wow fadeInDown">
 				<h2>Service</h2>
 				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
 					elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
 					sit amet </p>
 			</div>
 			<div class="services-list">
-				<div class="services-list-item">
+				<div class="services-list-item wow bounceInLeft">
 					<div class="services-list-item__icon"><i class="far fa-star"></i></div>
 					<h6>Designing</h6>
 					<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor
 						eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
 				</div>
-				<div class="services-list-item">
+				<div class="services-list-item wow fadeIn" data-wow-delay="0.3s">
 					<div class="services-list-item__icon"><i class="fas fa-flask"></i></div>
 					<h6>Developing</h6>
 					<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor
 						eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per</p>
 				</div>
-				<div class="services-list-item">
+				<div class="services-list-item wow bounceInRight">
 					<div class="services-list-item__icon"><i class="fas fa-globe"></i></div>
 					<h6>Branding</h6>
 					<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor
@@ -285,7 +294,7 @@
 			</div>
 			<div class="hr"></div>
 			<div class="box-pricing">
-				<div class="services-list-item">
+				<div class="services-list-item wow fadeInLeft">
 					<div class="services-list-item__icon"><i class="fas fa-money-bill-wave"></i></div>
 					<h6>Packege Pricing</h6>
 					<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
@@ -293,7 +302,7 @@
 						sagittis sem nibh id elit. </p>
 				</div>
 				<div class="prices">
-					<div class="prices-item">
+					<div class="prices-item wow fadeInUp">
 						<div class="prices-header">
 							<span class="prices-header__title">
 								Basic <span class="line-sm"></span><span>$35</span>
@@ -306,7 +315,7 @@
 						</ul>
 						<div class="prices-footer"><a href="#" class="btn btn--orange">Purchase</a></div>
 					</div>
-					<div class="prices-item">
+					<div class="prices-item wow fadeInUp" data-wow-delay="0.1s">
 						<div class="prices-header">
 							<span class="prices-header__title">
 								Gold <span class="line-sm"></span><span>$99</span>
@@ -321,7 +330,7 @@
 						</ul>
 						<div class="prices-footer"><a href="#" class="btn btn--orange">Purchase</a></div>
 					</div>
-					<div class="prices-item">
+					<div class="prices-item wow fadeInUp" data-wow-delay="0.2s">
 						<div class="prices-header">
 							<span class="prices-header__title">
 								Silver <span class="line-sm"></span><span>$65</span>
@@ -385,13 +394,13 @@
 	</section>
 	<section id='works' class="box-portfolio">
 		<div class="wrapper">
-			<div class="heading">
+			<div class="heading wow fadeInDown">
 				<h2>Portfolio</h2>
 				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
 					elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
 					sit amet </p>
 			</div>
-			<div class="box-portfolio-slider">
+			<div class="box-portfolio-slider wow fadeIn" data-wow-delay="0.5s">
 				<div class="portfolio-slider">
 					<div><a href="#"><img src="img/portfolio-slider-img.png" alt=""></a></div>
 					<div><a href="#"><img src="img/portfolio-slider-img.png" alt=""></a></div>
@@ -407,7 +416,7 @@
 
 			<div class="hr"></div>
 			<div class="projects">
-				<div class="tab">
+				<div class="tab wow fadeIn" data-wow-delay="0.5s">
 					<div class="tab-slider-wrap">
 						<ul id='tab-caption-slider' class="tab-caption controls">
 							<li class="tab-caption__item active" data-filter="all"><span>All Work</span></li>
@@ -528,14 +537,14 @@
 
 	<section id='blog' class="box-blog">
 		<div class="wrapper">
-			<div class="heading">
+			<div class="heading wow fadeInDown">
 				<h2>Blog</h2>
 				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
 					elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
 					sit amet </p>
 			</div>
 			<div class="blog-list">
-				<div class="blog-list-item">
+				<div class="blog-list-item wow fadeInLeft">
 					<div class="blog-list-item__img">
 						<a href="#" class="blog-list-item__link"></a>
 						<div class="blog-list-item__top-img">
@@ -563,7 +572,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="blog-list-item">
+				<div class="blog-list-item wow fadeInRight">
 					<div class="blog-list-item__img">
 						<a href="#" class="blog-list-item__link"></a>
 						<div class="blog-list-item__top-img">
@@ -591,7 +600,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="blog-list-item">
+				<div class="blog-list-item wow fadeInLeft">
 					<div class="blog-list-item__img">
 						<a href="#" class="blog-list-item__link"></a>
 						<div class="blog-list-item__top-img">
@@ -617,7 +626,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="blog-list-item">
+				<div class="blog-list-item wow fadeInRight">
 					<div class="blog-list-item__img">
 						<a href="#" class="blog-list-item__link"></a>
 						<div class="blog-list-item__top-img">
@@ -666,7 +675,7 @@
 
 	<section id='contact' class="box-contact">
 		<div class="wrapper">
-			<div class="heading">
+			<div class="heading wow fadeInDown">
 				<h2>Contact</h2>
 				<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
 					elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
@@ -674,7 +683,7 @@
 			</div>
 
 			<div class="contact-wrap">
-				<div class="contact-wrap-left">
+				<div class="contact-wrap-left wow fadeInLeft" data-wow-delay="0.1s">
 					<h6>Drop as a message</h6>
 					<form>
 						<div class="form-field">
@@ -692,7 +701,7 @@
 						<input type="submit" class="btn btn--orange" value="submit">
 					</form>
 				</div>
-				<div class="contact-wrap-right">
+				<div class="contact-wrap-right wow fadeInLeft">
 					<h6>Contact info</h6>
 					<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus
 						a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat</p>
