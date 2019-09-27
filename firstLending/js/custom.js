@@ -1,5 +1,6 @@
-//$(function(){
+//custom.js
 
+//$(function(){
 
 //	var hf = function(){
 //		var h_header = $('header').height();
