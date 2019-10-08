@@ -16,7 +16,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('scripts', function () {
-  return gulp.src(['src/js/libs/*.js', 'src/js/custom.js'])
+  return gulp.src(['src/js/libs/*.js', 'src/js/custom.js', '!src/js/libs/lazyload.js'])
     .pipe(concat('libs.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./js'))
