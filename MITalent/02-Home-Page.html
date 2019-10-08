@@ -9,13 +9,6 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <link
-    href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700|Mrs+Saint+Delafield|Open+Sans:300,400,700&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -66,8 +59,7 @@
           <div class="header-slider">
             <div class="header-slider__item">
               <div class="header-banner ">
-                <img class='header__img header__img-big' src="image/header-img.png" alt="">
-                <img class='header__img header__img-small' src="image/header-img-small.png" alt="">
+                  <img class='header__img header__img-big lazy' src='image/content-item-img.png' data-src="image/header-img.png" alt="">
                 <div class="header__title">
                   <h3>Latest News</h3>
                   <h1>BodyBuilding best
@@ -77,8 +69,7 @@
             </div>
             <div class="header-slider__item">
               <div class="header-banner ">
-                <img class='header__img header__img-big' src="image/header-img.png" alt="">
-                <img class='header__img header__img-small' src="image/header-img-small.png" alt="">
+                  <img class='header__img header__img-big lazy' src='image/content-item-img.png' data-src="image/header-img.png" alt="">
                 <div class="header__title">
                   <h3>Latest News #2</h3>
                   <h1>BodyBuilding best
@@ -88,8 +79,7 @@
             </div>
             <div class="header-slider__item">
               <div class="header-banner ">
-                <img class='header__img header__img-big' src="image/header-img.png" alt="">
-                <img class='header__img header__img-small' src="image/header-img-small.png" alt="">
+                <img class='header__img header__img-big lazy' src='image/content-item-img.png' data-src="image/header-img.png" alt="">
                 <div class="header__title">
                   <h3>Latest News #3</h3>
                   <h1>BodyBuilding best
@@ -140,8 +130,8 @@
         <div class="content-list content-list-page-two">
 
           <div class="content-list__item item-image">
-            <img src="image/pic/content-image-item__icon.png" alt="img" class="icon-pimary">
-            <div class="item-image__img"><img src="image/content-item-image-lg.jpg" alt=""></div>
+            <img class='lazy' src='image/content-item-img.png' data-src="image/pic/content-image-item__icon.png" alt="img" class="icon-pimary">
+            <div class="item-image__img"><img class='lazy' src='image/content-item-img.png' data-src="image/content-item-image-lg.jpg" alt=""></div>
             <div class="content-list-wrap">
               <div class="title">
                 <span class="content-list__icon"><img src="image/pic/image.svg" alt=""></span>
@@ -241,7 +231,7 @@
 
           <div class="content-list__item item-quote">
             <div class="content-list-wrap">
-              <span class="content-list__icon"><img src="image/pic/quote.png" alt=""></span>
+              <span class="content-list__icon"><img class='lazy' src='image/content-item-img.png' data-src="image/pic/quote.png" alt=""></span>
               <p class="item-quote__text">It's about having an actives lifestyles, staying of’shealthy powers, and
                 making the right decisions. Life is bes about balance. Not everybody wants to run a marathon, but we
                 extra have a now days flight of stairs.
@@ -251,10 +241,8 @@
           </div>
 
           <div class="content-list__item item-video">
-            <div class="item-video__video">
-              <iframe style="width: 100%" height="490" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div id='item-video__video' class="item-video__video">
+              
             </div>
             <div class="content-list-wrap">
               <span class="content-list__icon"><img src="image/pic/video.svg" alt="img"></span>
@@ -376,12 +364,13 @@
           <form action="POST" class="form">
             <div class="form-field">
               <input type="text" class='form-control' placeholder="search">
-              <button type="submit" class="btn"><span class="sidebar-search__icon"><i class="fas fa-search"></i></span></button>
+              <button type="submit" class="btn"><span class="sidebar-search__icon"><i
+                    class="fas fa-search"></i></span></button>
             </div>
           </form>
 
           <div class="advertising">
-            <img src="image/advertising-lg.jpg" alt="advertising">
+            <img class='lazy' src='image/content-item-img.png' data-src="image/advertising-lg.jpg" alt="advertising">
           </div>
 
           <div class="categories">
@@ -398,7 +387,7 @@
           </div>
 
           <div class="advertising">
-            <img src="image/advertising-sm.jpg" alt="advertising">
+            <img class='lazy' src='image/content-item-img.png' data-src="image/advertising-sm.jpg" alt="advertising">
           </div>
 
           <div class="latest-post">
@@ -406,7 +395,7 @@
 
             <ul class="latest-post-list">
               <li class="latest-post-list__item">
-                <div class="latest-post__img"><img src="image/latest-post__img-white.jpg" alt=""></div>
+                <div class="latest-post__img"><img class='lazy' src='image/content-item-img.png' data-src="image/latest-post__img-white.jpg" alt=""></div>
                 <div class="latest-post__content">
                   <h2 class="latest-post__title">jurney towards a
                     lifestyle</h2>
@@ -419,7 +408,7 @@
               </li>
 
               <li class="latest-post-list__item">
-                <div class="latest-post__img"><img src="image/latest-post__img-black.jpg" alt=""></div>
+                <div class="latest-post__img"><img class='lazy' src='image/content-item-img.png' data-src="image/latest-post__img-black.jpg" alt=""></div>
                 <div class="latest-post__content">
                   <h2 class="latest-post__title">Fashionable shoes
                     for men</h2>
@@ -432,7 +421,7 @@
               </li>
 
               <li class="latest-post-list__item">
-                <div class="latest-post__img"><img src="image/latest-post__img-white.jpg" alt=""></div>
+                <div class="latest-post__img"><img class='lazy' src='image/content-item-img.png' data-src="image/latest-post__img-white.jpg" alt=""></div>
                 <div class="latest-post__content">
                   <h2 class="latest-post__title">jurney towards a
                     lifestyle</h2>
@@ -445,7 +434,7 @@
               </li>
 
               <li class="latest-post-list__item">
-                <div class="latest-post__img"><img src="image/latest-post__img-black.jpg" alt=""></div>
+                <div class="latest-post__img"><img class='lazy' src='image/content-item-img.png' data-src="image/latest-post__img-black.jpg" alt=""></div>
                 <div class="latest-post__content">
                   <h2 class="latest-post__title">Fashionable shoes
                     for men</h2>
@@ -473,13 +462,13 @@
             <div class="sidebar-slider__buttons"></div>
             <div class="sidebar-slider">
               <div class="sidebar-slider__item">
-                <img src="image/galery/sidebar-slider/1.jpg" alt="img">
+                <img class='lazy' src='image/content-item-img.png' data-src="image/galery/sidebar-slider/1.jpg" alt="img">
               </div>
               <div class="sidebar-slider__item">
-                <img src="image/galery/sidebar-slider/2.jpg" alt="img">
+                <img class='lazy' src='image/content-item-img.png' data-src="image/galery/sidebar-slider/2.jpg" alt="img">
               </div>
               <div class="sidebar-slider__item">
-                <img src="image/galery/sidebar-slider/5.jpg" alt="img">
+                <img class='lazy' src='image/content-item-img.png' data-src="image/galery/sidebar-slider/5.jpg" alt="img">
               </div>
             </div>
 
@@ -500,7 +489,7 @@
           <div class="footer-about__content">
             <p class="footer__desc">Lorem ipsum dolor sit amet, conser adipisicing esse cillum dolore nulla
               pariatur.</p>
-            <div class="footer-about__img"><img src="image/footer-about-img.jpg" alt="img"></div>
+            <div class="footer-about__img"><img class='lazy' data-src="image/footer-about-img.jpg" alt="img"></div>
           </div>
         </div>
         <div class="footer-top__item footer-tweets">
@@ -518,18 +507,18 @@
         <div class="footer-top__item footer-instagram">
           <h4 class="footer__title">follow me instagram</h4>
           <div class="footer-instagram__gallery">
-            <a href="image/galery/1.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/1.jpg"
-                alt="img"></a>
-            <a href="image/galery/2.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/2.jpg"
-                alt="img"></a>
-            <a href="image/galery/3.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/3.jpg"
-                alt="img"></a>
-            <a href="image/galery/4.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/4.jpg"
-                alt="img"></a>
-            <a href="image/galery/5.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/5.jpg"
-                alt="img"></a>
-            <a href="image/galery/6.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/6.jpg"
-                alt="img"></a>
+            <a href="image/galery/1.jpg" class="footer-instagram__gallery-item lightzoom"><img class="lazy"
+                data-src="image/galery/small/1.jpg" alt="img"></a>
+            <a href="image/galery/2.jpg" class="footer-instagram__gallery-item lightzoom"><img class="lazy"
+                data-src="image/galery/small/2.jpg" alt="img"></a>
+            <a href="image/galery/3.jpg" class="footer-instagram__gallery-item lightzoom"><img class="lazy"
+                data-src="image/galery/small/3.jpg" alt="img"></a>
+            <a href="image/galery/4.jpg" class="footer-instagram__gallery-item lightzoom"><img class="lazy"
+                data-src="image/galery/small/4.jpg" alt="img"></a>
+            <a href="image/galery/5.jpg" class="footer-instagram__gallery-item lightzoom"><img class="lazy"
+                data-src="image/galery/small/5.jpg" alt="img"></a>
+            <a href="image/galery/6.jpg" class="footer-instagram__gallery-item lightzoom"><img class="lazy"
+                data-src="image/galery/small/6.jpg" alt="img"></a>
           </div>
         </div>
         <div class="footer-top__item footer-comment">
@@ -554,39 +543,46 @@
     </div>
   </footer>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <!-- <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script> -->
-  <script src="js/slick.min.js"></script>
-  <script src="js/lightzoom.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/lazyload.min.js"></script>
+  <script src="js/libs.js"></script>
   <script src="https://vk.com/js/api/openapi.js?162"></script>
-  <script src="js/custom.js"></script>
   <script>
     $(document).ready(function () {
+      $('head').append(
+        '<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700|Mrs+Saint+Delafield|Open+Sans:300,400,700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">'
+      );
+      $('.lazy').lazyload();
+
+      $(window).bind('scroll', function () {
+      if ($(this).scrollTop() >= 1000) {
+        console.log('qwdqwd');
+        $('#item-video__video').html(
+          '<iframe style="width: 100%" height="490" src="https://www.youtube.com/embed/jNQXAC9IVRw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+        $(this).unbind('scroll');
+      }
+    });
       $('.sidebar-slider').slick({
-      appendArrows: '.sidebar-slider__buttons',
-      prevArrow: '<button type="button" class="slick-prev"><img src="image/pic/sidebar-slider__prev.svg" alt=""></button>',
-      nextArrow: '<button type="button" class="slick-next"><img src="image/pic/sidebar-slider__next.svg" alt=""></button>',
-      dots: false,
-      fade: true,
-    });
+        appendArrows: '.sidebar-slider__buttons',
+        prevArrow: '<button type="button" class="slick-prev"><img src="image/pic/sidebar-slider__prev.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="image/pic/sidebar-slider__next.svg" alt=""></button>',
+        dots: false,
+        fade: true,
+      });
 
-    //Открытие sidebar
-    $('.btn-toggle-right-sidebar').on('click', function () {
-      $('.wrap-right-sidebar').toggleClass('right-sidebar--active');
-      $(this).toggleClass('btn-toggle-right-sidebar--active');
-      $('.navigation').toggleClass('navigation--z-index');
-    });
+      //Открытие sidebar
+      $('.btn-toggle-right-sidebar').on('click', function () {
+        $('.wrap-right-sidebar').toggleClass('right-sidebar--active');
+        $(this).toggleClass('btn-toggle-right-sidebar--active');
+        $('.navigation').toggleClass('navigation--z-index');
+      });
 
-    VK.Widgets.Group("vk_groups", {
-      mode: 3,
-      width: 300
-    }, 20003922);
+      VK.Widgets.Group("vk_groups", {
+        mode: 3,
+        width: 300
+      }, 20003922);
 
     });
-    
   </script>
 </body>
 
