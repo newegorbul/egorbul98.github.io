@@ -29,3 +29,7 @@ gulp.task('imagemin', function () {
   .pipe(imagemin())
   .pipe(gulp.dest('./img'))
 });
+
+gulp.task('watch', function() {
+    gulp.watch(['src/scss/**/*.scss',  '!src/js/libs/lazyload.js', 'src/js/libs/*.js', 'src/js/custom.js'], gulp.series('sass', 'scripts'));
+});
