@@ -29,7 +29,7 @@ $(document).ready(function () {
     // $(this).parents('.tab').find('.slick-current').addClass('active').siblings().removeClass('active').
     // parents('.tab').find('.tab-content__item').removeClass('active').eq($(this).parents('.tab').find('.slick-current').index()-1).addClass('active');
     $(this).parents('.tab').find('.slick-current').trigger('click');
-  
+
   });
 
   // mixItUp portfolio projects
@@ -42,40 +42,12 @@ $(document).ready(function () {
     }
   });
 
-
-});
-
-$(window).on('resize load', function () { //При изменении размера экранов, табы меняют своё поведение
-  // if ($(window).width() < 768) {
-  //   $('.tab-caption').off('click');
-  // } else {
-  //   $('.tab-caption').on('click', 'li', functionTabs);
-  // }
-});
+  $('.navigation-btn-toogle').on('click', function () {
+    $(this).addClass('.active');
+    $('.menu').slideToggle();
+  });
 
 
-
-
-
-$('.banner-slider, .comment-slider').slick({
-  arrows: false,
-  dots: true
-});
-
-$('.portfolio-slider').slick({
-  dots: true,
-  appendArrows: '.portfolio-slider__btns',
-  prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
-  nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
-  responsive: [{
-    breakpoint: 767,
-    settings: {
-      dots: false,
-    }
-  }]
-});
-
-$(document).ready(function () {
   $(".navigation").on("click", "a", function (event) {
     //отменяем стандартную обработку нажатия по ссылке
     event.preventDefault();
@@ -88,7 +60,38 @@ $(document).ready(function () {
       scrollTop: top
     }, 1200);
   });
+
+  $('.banner-slider, .comment-slider').slick({
+    arrows: false,
+    dots: true
+  });
+
+  $('.portfolio-slider').slick({
+    dots: true,
+    appendArrows: '.portfolio-slider__btns',
+    prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        dots: false,
+      }
+    }]
+  });
 });
+
+$(window).on('resize load', function () { //При изменении размера экранов, табы меняют своё поведение
+  // if ($(window).width() < 768) {
+  //   $('.tab-caption').off('click');
+  // } else {
+  //   $('.tab-caption').on('click', 'li', functionTabs);
+  // }
+});
+
+
+// $(document).ready(function () {
+
+// });
 
 
 var tabCaptionSlider = $('#tab-caption-slider');
