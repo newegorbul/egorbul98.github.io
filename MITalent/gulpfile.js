@@ -12,7 +12,7 @@ gulp.task('sass', function () {
     .pipe(cleanCss({
       compatibility: 'ie8'
     }))
-    .pipe(gulp.dest('src/css'))
+    // .pipe(gulp.dest('./css'))
     .pipe(gulp.src('src/css/**/*'))
     .pipe(gulp.dest('./css'));
 });

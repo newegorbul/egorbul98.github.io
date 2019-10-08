@@ -58,7 +58,8 @@ body {
   letter-spacing: 1px;
   color: #fff;
   @include fontHind();
-
+  height: auto;
+  overflow-y: hidden;
 }
 
 .body--fixed {
@@ -872,6 +873,10 @@ h2 {
   .item-video {
     position: relative;
 
+
+    &__video{
+      min-height: 262px;
+    }
     .content-list__icon {
       top: 0;
       font-size: 24px;
