@@ -9,12 +9,6 @@
 
   <link rel="stylesheet" href="css/style.css">
 
-  <link
-    href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700|Mrs+Saint+Delafield|Open+Sans:300,400,700&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
 </head>
 
 <body class="about-me-page">
@@ -140,7 +134,7 @@
 
 
           <div class="advertising">
-            <img src="image/advertising-sm.jpg" alt="advertising">
+            <img class='lazy' src='image/content-item-img.png' data-src="image/advertising-sm.jpg" alt="advertising">
           </div>
 
           <div class="latest-post latest-post--mod-last-child">
@@ -148,7 +142,7 @@
 
             <ul class="latest-post-list latest-post-list--mod-last-child">
               <li class="latest-post-list__item">
-                <div class="latest-post__img"><img src="image/latest-post__img-white.jpg" alt=""></div>
+                <div class="latest-post__img"><img class='lazy' src='image/content-item-img.png' data-src="image/latest-post__img-white.jpg" alt=""></div>
                 <div class="latest-post__content">
                   <h2 class="latest-post__title">jurney towards a
                     lifestyle</h2>
@@ -161,7 +155,7 @@
               </li>
 
               <li class="latest-post-list__item">
-                <div class="latest-post__img"><img src="image/latest-post__img-black.jpg" alt=""></div>
+                <div class="latest-post__img"><img class='lazy' src='image/content-item-img.png' data-src="image/latest-post__img-black.jpg" alt=""></div>
                 <div class="latest-post__content">
                   <h2 class="latest-post__title">Fashionable shoes
                     for men</h2>
@@ -174,7 +168,7 @@
               </li>
 
               <li class="latest-post-list__item">
-                <div class="latest-post__img"><img src="image/latest-post__img-black.jpg" alt=""></div>
+                <div class="latest-post__img"><img class='lazy' src='image/content-item-img.png' data-src="image/latest-post__img-black.jpg" alt=""></div>
                 <div class="latest-post__content">
                   <h2 class="latest-post__title">really awesome’s
                     Adventure</h2>
@@ -201,7 +195,7 @@
           <div class="footer-about__content">
             <p class="footer__desc">Lorem ipsum dolor sit amet, conser adipisicing esse cillum dolore nulla
               pariatur.</p>
-            <div class="footer-about__img"><img src="image/footer-about-img.jpg" alt="img"></div>
+            <div class="footer-about__img"><img class='lazy' src='image/content-item-img.png' data-src="image/footer-about-img.jpg" alt="img"></div>
           </div>
         </div>
         <div class="footer-top__item footer-tweets">
@@ -220,17 +214,17 @@
           <h4 class="footer__title">follow me instagram</h4>
           <div class="footer-instagram__gallery">
             <a href="image/galery/1.jpg" class="footer-instagram__gallery-item lightzoom"><img
-                src="image/galery/small/1.jpg" alt="img"></a>
+                class='lazy' src='image/content-item-img.png' data-src="image/galery/small/1.jpg" alt="img"></a>
             <a href="image/galery/2.jpg" class="footer-instagram__gallery-item lightzoom"><img
-                src="image/galery/small/2.jpg" alt="img"></a>
+                class='lazy' src='image/content-item-img.png' data-src="image/galery/small/2.jpg" alt="img"></a>
             <a href="image/galery/3.jpg" class="footer-instagram__gallery-item lightzoom"><img
-                src="image/galery/small/3.jpg" alt="img"></a>
+                class='lazy' src='image/content-item-img.png' data-src="image/galery/small/3.jpg" alt="img"></a>
             <a href="image/galery/4.jpg" class="footer-instagram__gallery-item lightzoom"><img
-                src="image/galery/small/4.jpg" alt="img"></a>
+                class='lazy' src='image/content-item-img.png' data-src="image/galery/small/4.jpg" alt="img"></a>
             <a href="image/galery/5.jpg" class="footer-instagram__gallery-item lightzoom"><img
-                src="image/galery/small/5.jpg" alt="img"></a>
+                class='lazy' src='image/content-item-img.png' data-src="image/galery/small/5.jpg" alt="img"></a>
             <a href="image/galery/6.jpg" class="footer-instagram__gallery-item lightzoom"><img
-                src="image/galery/small/6.jpg" alt="img"></a>
+                class='lazy' src='image/content-item-img.png' data-src="image/galery/small/6.jpg" alt="img"></a>
           </div>
         </div>
         <div class="footer-top__item footer-comment">
@@ -255,12 +249,9 @@
     </div>
   </footer>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/lightzoom.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/custom.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/lazyload.min.js"></script>
+    <script src="js/libs.js"></script>
 
   <script>
     $(document).ready(function () {
