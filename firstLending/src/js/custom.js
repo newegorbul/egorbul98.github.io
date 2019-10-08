@@ -78,6 +78,8 @@ $(document).ready(function () {
       }
     }]
   });
+
+  
 });
 
 $(window).on('resize load', function () { //При изменении размера экранов, табы меняют своё поведение
