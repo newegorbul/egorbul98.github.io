@@ -7,14 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home page</title>
 
-  
-  <link rel="stylesheet" href="css/style.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700|Mrs+Saint+Delafield|Open+Sans:300,400,700&display=swap"
-    rel="stylesheet">
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
 
 </head>
 
@@ -494,18 +489,18 @@
         <div class="footer-top__item footer-instagram">
           <h4 class="footer__title">follow me instagram</h4>
           <div class="footer-instagram__gallery">
-            <a href="image/galery/1.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/1.jpg"
-                alt="img"></a>
-            <a href="image/galery/2.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/2.jpg"
-                alt="img"></a>
-            <a href="image/galery/3.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/3.jpg"
-                alt="img"></a>
-            <a href="image/galery/4.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/4.jpg"
-                alt="img"></a>
-            <a href="image/galery/5.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/5.jpg"
-                alt="img"></a>
-            <a href="image/galery/6.jpg" class="footer-instagram__gallery-item lightzoom"><img src="image/galery/small/6.jpg"
-                alt="img"></a>
+            <a href="image/galery/1.jpg" class="footer-instagram__gallery-item lightzoom"><img
+                src="image/galery/small/1.jpg" alt="img"></a>
+            <a href="image/galery/2.jpg" class="footer-instagram__gallery-item lightzoom"><img
+                src="image/galery/small/2.jpg" alt="img"></a>
+            <a href="image/galery/3.jpg" class="footer-instagram__gallery-item lightzoom"><img
+                src="image/galery/small/3.jpg" alt="img"></a>
+            <a href="image/galery/4.jpg" class="footer-instagram__gallery-item lightzoom"><img
+                src="image/galery/small/4.jpg" alt="img"></a>
+            <a href="image/galery/5.jpg" class="footer-instagram__gallery-item lightzoom"><img
+                src="image/galery/small/5.jpg" alt="img"></a>
+            <a href="image/galery/6.jpg" class="footer-instagram__gallery-item lightzoom"><img
+                src="image/galery/small/6.jpg" alt="img"></a>
           </div>
         </div>
         <div class="footer-top__item footer-comment">
@@ -532,17 +527,22 @@
 
 
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-  <!-- <script src="js/jquery-3.4.1.js"></script> -->
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> 
+   <script src="js/jquery-3.4.1.js"></script> 
+  
+   <script src="js/masonry.pkgd.min.js"></script>
+   <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script> 
+   <script src="js/slick.min.js"></script>  -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/masonry.pkgd.min.js"></script>
-  <!-- <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script> -->
-  <script src="js/slick.min.js"></script>
-  <script src="js/lightzoom.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="js/lazyload.min.js"></script>
+  <script src="js/libs.js"></script>
 
   <script>
     $(document).ready(function () {
+      $('head').append(
+        '<link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700|Montserrat:400,700|Mrs+Saint+Delafield|Open+Sans:300,400,700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">'
+      );
+
       var $grid = $('.masonry-list');
       $grid.masonry({
         // columnWidth: 360,
