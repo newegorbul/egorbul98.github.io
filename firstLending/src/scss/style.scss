@@ -787,6 +787,7 @@ body {
   border-radius: 50%;
   border: 2px solid #fff;
   font-family: 'Montserrat', sans-serif;
+  
   height: 150px;
   width: 150px;
   line-height: 45px;
@@ -1522,6 +1523,7 @@ body {
   padding: 0;
   list-style: none;
   text-decoration: none;
+  font-display: swap;
 }
 
 #map::before {
