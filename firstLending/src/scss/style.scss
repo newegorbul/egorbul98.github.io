@@ -1011,6 +1011,7 @@ body {
   padding: 9px 40px;
   color: #0d0d0d;
   margin-top: 26px;
+  border-color: #f39c12;
 }
 
 .contact-wrap-left form {
@@ -1171,10 +1172,7 @@ body {
   border-color: #f39c12;
 }
 
-.btn--orange {
-  color: #0d0d0d;
-  border-color: #f39c12;
-}
+
 
 .btn {
   font-size: 16px;
@@ -1188,7 +1186,10 @@ body {
   border: 2px solid white;
   padding: 14px 36px;
 }
-
+.btn--orange {
+  color: #0d0d0d;
+  border-color: #f39c12;
+}
 .box-skills__item--img img {
   width: 100%;
   height: auto;
