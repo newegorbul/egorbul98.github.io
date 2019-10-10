@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Site</title>
-
+  <link rel="shortcut icon" href="img/icon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
 
 <body>
@@ -51,7 +51,7 @@
     <div class="wrapper">
       <h2 class="box-price__title">Цена</h2>
       <h3 class="box-price__desc bold">Скриншот с ценами с официального сайта</h3>
-      <img class='box-price__img' src="img/Тарифы.png" alt="">
+      <img class='box-price__img lazy' src='img/icon_robot.png' data-src="img/Тарифы.png" alt="">
       <!-- 
       <div class="price-list">
 
@@ -268,12 +268,18 @@
       <div class="payment">
         <h4 class="payment__title">Принимаем к оплате</h4>
         <div class="payment-list">
-          <div class="payment-item"><img class='master-card' src="img/logo/logo-mastercard.png" alt=""></div>
-          <div class="payment-item"><img src="img/logo/logo-webmoney.png" alt=""></div>
-          <div class="payment-item"><img src="img/logo/logo-liqpay.png" alt=""></div>
-          <div class="payment-item"><img src="img/logo/logo-perfect-money.png" alt=""></div>
-          <div class="payment-item"><img src="img/logo/logo-yandex-money.png" alt=""></div>
-          <div class="payment-item"><img src="img/w1-logo.gif" alt=""></div>
+          <div class="payment-item"><img class='master-card lazy' src="img/logo/logo-mastercard.png" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/logo-webmoney.png" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/logo-liqpay.png" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/logo-perfect-money.png" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/logo-yandex-money.png" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/w1-logo.gif" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/euroset.gif" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/logo-megafon.png" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/logo-tele2.png" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/logo-tinkoff-bank.png" alt=""></div>
+          <div class="payment-item"><img class='lazy' src='img/icon_robot.png' data-src="img/logo/bitcoin.svg" alt=""></div>
+          
         </div>
 
       </div>
@@ -304,8 +310,9 @@
     <div class="wrapper">
       <div class="inner">
         <h3 class="box-reviews__title">Отзывы</h3>
-        <div id="hypercomments_widget"></div>
-        <a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>
+        <div id="rev">
+          
+        </div>
       </div>
     </div>
   </section>
@@ -313,13 +320,18 @@
 
 
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/lazyload.js"></script>
   <script>
-    $(document).ready(function () {
-      $("head").append(
-        "<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.9.0/css/all.css' integrity='sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E'crossorigin='anonymous'>"
-      );
-    })
-    _hcwp = window._hcwp || [];
+    // let boxCrackPrice = $('.box-crack-price').offset().top;
+    $('.lazy').lazyload();
+    $(window).bind('scroll', function () {
+      if ($(this).scrollTop() >= 150) {
+        console.log('qwdwq');
+        
+        $('#rev').html(
+          '<div id="hypercomments_widget"></div><a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>'
+        )
+        _hcwp = window._hcwp || [];
     _hcwp.push({
       widget: "Stream",
       widget_id: 85216
@@ -337,6 +349,15 @@
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hcc, s.nextSibling);
     })();
+        $(this).unbind('scroll');
+      }
+    });
+    $(document).ready(function () {
+      $("head").append(
+        "<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.9.0/css/all.css' integrity='sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E'crossorigin='anonymous'>"
+      );
+    })
+    
   </script>
 </body>
 
