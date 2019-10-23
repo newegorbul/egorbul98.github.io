@@ -1,0 +1,84 @@
+.bank__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0;
+}
+
+.bank__title {
+  position: relative;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 10px;
+  padding-left: 40px;
+  color: @light-black;
+
+  &::before {
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 27px;
+    height: 26px;
+    content: "";
+    background-image: url("../img/sberbank.png");
+    background-repeat: no-repeat;
+    background-size: 27px 26px;
+  }
+}
+
+.bank__term {
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 600;
+  color: @primary-black;
+}
+
+.bank__term-description {
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @primary-black;
+}
+
+@media(min-width: @tablet-width) {
+  .bank__title {
+  font-size: 13px;
+  line-height: 15px;
+  }
+
+  .bank__term {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .bank__term-description {
+    font-size: 13px;
+    line-height: 24px;
+  }
+}
+
+@media(min-width: @desktop-width) {
+
+  .bank__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    padding-left: 70px;
+
+    &::before {
+      top: -14px;
+      width: 47px;
+      height: 45px;
+      background-size: 47px 45px;
+    }
+  }
+
+  .bank__term {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .bank__term-description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

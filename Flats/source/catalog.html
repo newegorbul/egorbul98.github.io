@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Site</title>
+
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
+  <header class="header-catalog">
+    <div class="header-catalog__wrap">
+      <div class="header-catalog__logo">
+        <img src="img/logo.svg" alt="logo">
+      </div>
+      <div class="header-catalog__right-box">
+        <div class="header-catalog__cities">
+          <button type="button" class="header-catalog__cities-btn pink__btn">Санкт-Петербург и ЛО</button>
+          <button type="button"
+            class="header-catalog__cities-btn pink__btn header-catalog__cities-btn--background">Москва
+            и МО</button>
+        </div>
+        <nav class="header-catalog__nav catalog-nav ">
+          <div class="catalog-nav__item catalog-nav__item--active"><a class='link' href="">Главная</a></div>
+          <div class="catalog-nav__item"><a class='link' href="">Видеобзоры</a></div>
+          <div class="catalog-nav__item"><a class='link' href="">Застройщики</a></div>
+          <div class="catalog-nav__item"><a class='link' href="">Акции и скидки</a></div>
+          <div class="catalog-nav__item catalog-nav__item-menu catalog-nav__item--margin-right"><a href=""
+              class="link-menu"><span class="text">Полезное</span>
+              <svg width="10" height="6">
+                <image width="10" height="6"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAQAAABQ+cdNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjChIREw8AENF9AAAAZklEQVQI1y3LsQ3CMBRAwTNswARIbOACFkCRyCYUfxm7YJMgRSxACjZA8gRsgEwRulfcS6U4ucYLqNnNM5WOrzFm6mCyJZWjux0GzPi4pK7uPRzW3ds52oZosgUscjRS/5M6EePaP0QlGxXaqFHbAAAAAElFTkSuQmCC" />
+                </svg>
+            </a>
+
+            <div class="catalog-nav__drop">
+              <div class="catalog-nav__drop-inner">
+                <div class="catalog-nav__item"><a class='link' href="">Что-то полезное 1</a></div>
+                <div class="catalog-nav__item"><a class='link' href="">Что-то полезное 2</a></div>
+                <div class="catalog-nav__item"><a class='link' href="">Что-то полезное 3</a></div>
+
+              </div>
+            </div>
+          </div>
+          <!-- <div class="catalog-nav__item"><img class='catalog-nav__icon' src="img/heart.svg" alt="img"><a
+                href="">Избранное
+            </div> -->
+          <div class="catalog-nav__item">
+            <svg width="13" height="12">
+              <use xlink:href="#heart"></use>
+            </svg>
+            <a href="">Избранное</a>
+          </div>
+        </nav>
+        <div class="btn-open-nav"><img class='img-open-nav' src="img/btn-open-nav.svg" alt=""></div>
+      </div>
+    </div>
+    <hr class="hr">
+    </hr>
+  </header>
+
+
+
+  <section class="filter-box filter">
+    <div class="filter-header">
+      <h3 class="filter__title">Фильтр поиска</h3>
+      <div class="filter__collapse-btn"><span class="text">Свернуть</span><img src="img/arrow__down-input-grey.svg"
+          alt=""></div>
+    </div>
+    <hr class="hr">
+    <div class="filter__collapse-wrap">
+
+      <form action="" class="filter__form">
+        <div class="filter__form-inner">
+          <div class="filter-wrap-top">
+            <div class="filter-field">
+              <span class="filter-field__name">Район:</span>
+              <div class="filter-field__select-arrow">
+                <img src="img/arrow__down-input-grey.svg">
+              </div>
+              <div class="select-input">
+                <input type="text" value="" name='area' class="select filter__area filter__input" onkeydown="return false" placeholder="Район:">
+                <div class="checkboxes">
+                  <label>
+                    <input type="checkbox" name='area' value="1" /><span
+                      class="check"></span><span class="text">Район 1</span></label>
+                  <label>
+                    <input type="checkbox" name='area' value="2" /><span
+                      class="check"></span><span class="text">Район 2</span></label>
+                  <label>
+                    <input type="checkbox" name='area' value="3" /><span
+                      class="check"></span><span class="text">Район 3</span></label>
+                </div>
+              </div>
+              
+            </div>
+
+            
+            <div class="filter-field">
+              <span class="filter-field__name">Метро:</span>
+              <div class="filter-field__select-arrow">
+                <img src="img/arrow__down-input-grey.svg">
+              </div>
+              <div class="select-input">
+                <input type="text" value="" name='metro' class="select filter__metro filter__input" onkeydown="return false" placeholder="Метро:">
+                <div class="checkboxes">
+                  <label>
+                    <input type="checkbox" name='metro' value="1" /><span
+                      class="check"></span><span class="text">Метро 1</span></label>
+                  <label>
+                    <input type="checkbox" name='metro' value="2" /><span
+                      class="check"></span><span class="text">Метро 2</span></label>
+                  <label>
+                    <input type="checkbox" name='metro' value="3" /><span
+                      class="check"></span><span class="text">Метро 3</span></label>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="filter-field">
+              <span class="filter-field__name">Срок сдачи:</span>
+              <div class="filter-field__select-arrow">
+                <img src="img/arrow__down-input-grey.svg">
+              </div>
+              <div class="select-input">
+                <input type="text" value="" name='deadline' class="select filter__deadline filter__input" onkeydown="return false" placeholder="Срок сдачи:">
+                <div class="checkboxes">
+                  <label>
+                    <input type="checkbox" name='deadline' value="2019" /><span
+                      class="check"></span><span class="text">2019</span></label>
+                  <label>
+                    <input type="checkbox" name='deadline' value="2020" /><span
+                      class="check"></span><span class="text">2020</span></label>
+                  <label>
+                    <input type="checkbox" name='deadline' value="2021" /><span
+                      class="check"></span><span class="text">2021</span></label>
+                  <label>
+                    <input type="checkbox" name='deadline' value="2022" /><span
+                      class="check"></span><span class="text">2022</span></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-field filter-field-cost">
+              <span class="filter-field__name filter-field__name-cost">Стоимость:</span>
+              <div class="filter-field-cost__wrap">
+                <input type="text" class='filter__cost-from filter__input' name=" cost-from" id="cost-from"
+                  placeholder="от">
+                <input type=" text" class='filter__cost-to filter__input' name="cost-to" id="cost-to" placeholder="до">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="filter-wrap-middle">
+              <div class="filter-field">
+                  <span class="filter-field__name">Комплекс:</span>
+                  <div class="filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='complex' class="select filter__complex filter__input" onkeydown="return false" placeholder="Комплекс:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='complex' value="1" /><span
+                          class="check"></span><span class="text">ЖК "Большое Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="2" /><span
+                          class="check"></span><span class="text">ЖК "Среднее Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="3" /><span
+                          class="check"></span><span class="text">ЖК "Старое Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="4" /><span
+                          class="check"></span><span class="text">ЖК "Новое Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="5" /><span
+                          class="check"></span><span class="text">ЖК "Сложное Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="6" /><span
+                          class="check"></span><span class="text">ЖК "Простое Мурино"</span></label>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="filter-field">
+                  <span class="filter-field__name">Застройщик:</span>
+                  <div class="filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='developer' class="select filter__developer filter__input" onkeydown="return false" placeholder="Застройщик:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='developer' value="1" /><span
+                          class="check"></span><span class="text">ООО «Инвест-Строй»</span></label>
+                      <label>
+                        <input type="checkbox" name='developer' value="2" /><span
+                          class="check"></span><span class="text">ООО «Инвест-Строй» 2</span></label>
+                      <label>
+                        <input type="checkbox" name='developer' value="3" /><span
+                          class="check"></span><span class="text">ООО «Инвест-Строй» 3</span></label>
+                      <label>
+                        <input type="checkbox" name='developer' value="4" /><span
+                          class="check"></span><span class="text">ООО «Инвест-Строй» 4</span></label>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="filter-field">
+                  <span class="filter-field__name">Тип квартиры:</span>
+                  <div class="filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='room' class="select filter__room filter__input" onkeydown="return false" placeholder="Тип квартиры:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='room' value="1" /><span
+                          class="check"></span><span class="text">1 ккв</span></label>
+                      <label>
+                        <input type="checkbox" name='room' value="2" /><span
+                          class="check"></span><span class="text">2 ккв</span></label>
+                      <label>
+                        <input type="checkbox" name='room' value="3" /><span
+                          class="check"></span><span class="text">3 ккв</span></label>
+                      <label>
+                        <input type="checkbox" name='room' value="4" /><span
+                          class="check"></span><span class="text">Студия</span></label>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="filter-field">
+                  <span class="filter-field__name">Тип собственности:</span>
+                  <div class="filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='type-property' class="select filter__type-property filter__input" onkeydown="return false" placeholder="Тип собственности:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='type-property' value="1" /><span
+                          class="check"></span><span class="text">Тип собственности 1</span></label>
+                      <label>
+                        <input type="checkbox" name='type-property' value="2" /><span
+                          class="check"></span><span class="text">Тип собственности 2</span></label>
+                      <label>
+                        <input type="checkbox" name='type-property' value="3" /><span
+                          class="check"></span><span class="text">Тип собственности 3</span></label>
+                      <label>
+                        <input type="checkbox" name='type-property' value="4" /><span
+                          class="check"></span><span class="text">Тип собственности 4</span></label>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="filter-field">
+                  <span class="filter-field__name">Отделка:</span>
+                  <div class="filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='type' class="select filter__type filter__input" onkeydown="return false" placeholder="Отделка:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='type' value="1" /><span
+                          class="check"></span><span class="text">С отделкой</span></label>
+                      <label>
+                        <input type="checkbox" name='type' value="2" /><span
+                          class="check"></span><span class="text">Без отделки</span></label>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="filter-field filter-field-square">
+              <span class="filter-field__name filter-field__name-square">Площадь:</span>
+              <div class="filter-field-cost__wrap">
+                <input type="text" class='filter__square-from filter__input' name=" square-from" id="square-from"
+                  placeholder="от">
+                <input type=" text" class='filter__square-to filter__input' name="square-to" id="square-to"
+                  placeholder="до">
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-wrap-bottom">
+              <div class="filter-field">
+                  <span class="filter-field__name">Банк:</span>
+                  <div class="filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='bank' class="select filter__bank filter__input" onkeydown="return false" placeholder="Банк:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='bank' value="1" /><span
+                          class="check"></span><span class="text">Банк 1</span></label>
+                      <label>
+                        <input type="checkbox" name='bank' value="2" /><span
+                          class="check"></span><span class="text">Банк 2</span></label>
+                      <label>
+                        <input type="checkbox" name='bank' value="3" /><span
+                          class="check"></span><span class="text">Банк 3</span></label>
+                      <label>
+                        <input type="checkbox" name='bank' value="4" /><span
+                          class="check"></span><span class="text">Банк 4</span></label>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="filter-field">
+                  <span class="filter-field__name">Оплата:</span>
+                  <div class="filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='payment' class="select filter__payment filter__input" onkeydown="return false" placeholder="Оплата:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='payment' value="1" /><span
+                          class="check"></span><span class="text">Оплата 1</span></label>
+                      <label>
+                        <input type="checkbox" name='payment' value="2" /><span
+                          class="check"></span><span class="text">Оплата 2</span></label>
+                      <label>
+                        <input type="checkbox" name='payment' value="3" /><span
+                          class="check"></span><span class="text">Оплата 3</span></label>
+                      <label>
+                        <input type="checkbox" name='payment' value="4" /><span
+                          class="check"></span><span class="text">Оплата 4</span></label>
+                    </div>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+
+        <div class="filter-buttons">
+          <button type="reset" class="filter__btn-reset pink__btn">Сбросить все фильтры <img
+              src="img/modal-close-red.svg" alt=""></button>
+          <button type='button' class='filter__btn-show pink__btn'>Показать объекты</button>
+          <button type='button' class='filter__btn-show-map pink__btn'><img src="img/placeholder-red.svg"
+              alt="">Показать
+            на карте</button>
+        </div>
+      </form>
+    </div>
+    <div class="filter__less-options"><span class="text">Меньше параметров</span><img src="img/up-arrow.svg" alt="">
+    </div>
+  </section>
+
+  <section class="sort-box">
+    <div class="catalog-wrapper">
+      <div class="search-list">
+        <span class="search-list__item">Поиск</span>
+        <span class="search-list__item">Санкт-Петербург</span>
+        <span class="search-list__item">Правобережная</span>
+        <span class="search-list__item">Улица Дыбенко</span>
+      </div>
+
+      <div class="sort-box-header">
+        <div class="sort-box__title-box">
+          <h2 class="title">Новостройи Санкт-Петербурга</h2>
+          <div class="count-complex__wrap">
+            <span class="count-complex">47</span>жилых комплексов
+          </div>
+        </div>
+        <div class="list-type-flats">
+          <button type="button" class="list-type-flats__btn oneRoom pink__btn"><span class="text-large">1-комнатная
+              кв.</span><span class="text-small">1 ккв</span></button>
+          <button type="button" class="list-type-flats__btn twoRoom pink__btn"><span class="text-large">2-комнатная
+              кв.</span><span class="text-small">2 ккв</span></button>
+          <button type="button" class="list-type-flats__btn threeRoom pink__btn"><span class="text-large">3-комнатная
+              кв.</span><span class="text-small">3 ккв</span></button>
+          <button type="button" class="list-type-flats__btn studio pink__btn"><span
+              class="text-large">Студия</span><span class="text-small">Студия</span></button>
+        </div>
+
+        <div class="sort-box__wrap">
+          <h3 class="sort-box__text">Сортировать</h3>
+          <div class="sort-box__inner">
+            <div class="sort-box__list-character list-character">
+              <button type='button'
+                class="list-character__btn list-character__btn-sort-by-recomend list-character__btn--active "><img
+                  src="img/bookmark-star.svg" alt="">Рекомендуемые</button>
+              <button type='button' class="list-character__btn list-character__btn-sort-by-coast"><img
+                  src="img/coin-stack.svg" alt="">По
+                цене</button>
+              <button type='button' class="list-character__btn list-character__btn-sort-by-coast-square"><img
+                  src="img/coin-stack.svg" alt="">По цене за
+                м2</button>
+              <button type='button' class="list-character__btn list-character__btn-sort-by-deadline"><img
+                  src="img/clock.svg" alt="">По сроку
+                сдачи</button>
+              <button type='button' class="list-character__btn list-character__btn-map"><img
+                  src="img/placeholder-red.svg" alt="">На карте</button>
+            </div>
+            <div class="sort-box__list-type list-type">
+              <!-- <button type='button' class="list-type__btn list-type__btn--active list-type__btn-tile">
+                <img src="img/blocks.svg" alt="">Плиткой</button> -->
+              <!-- <button type='button' class="list-type__btn list-type__btn-list"><img src="img/filter-list.svg" alt="">Списком</button>
+              <button type='button' class="list-type__btn list-type__btn-map"><img src="img/icon-maps.svg" alt="">На карте</button> -->
+              <button type='button' class="list-type__btn list-type__btn--active list-type__btn-tile">
+                <svg width="12" height="12" viewBox="0 0 12 12">
+                  <path
+                    d="M0,0H5.469V5.469H0V0ZM6.531,0H12V5.469H6.531V0ZM0,6.531H5.469V12H0V6.531Zm6.531,0H12V12H6.531V6.531Z" />
+                </svg>
+                Плиткой</button>
+              <button type='button' class="list-type__btn list-type__btn-list"><svg width="12" height="12"
+                  viewBox="0 0 12 12">
+                  <path d="M0,0H12V2.406H0V0ZM0,4.813H12V7.188H0V4.813ZM0,9.594H12V12H0V9.594Z" />
+                </svg>
+                Списком</button>
+              <button type='button' class="list-type__btn list-type__btn-map">
+                <svg width="15" height="15">
+                  <use xlink:href="#icon-maps"></use>
+                </svg>На карте</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="catalog-complex-box catalog-complex">
+    <div class="catalog-wrapper">
+      <div class="catalog-complex__list catalog-complex__list">
+
+        <div class="catalog-complex__item" data-complex='4' data-cost-min='2.4' data-cost-square-min='78.6'
+          data-developer='1'>
+          <div class="catalog-complex__item-header">
+            <div class="catalog-complex__slider">
+              <div class="catalog-complex__slide">
+                <img src="img/img-video-1.jpg" alt="img">
+                <div class="catalog-complex__slide-icons">
+                  <img src="img/slide-heart.svg" alt="img">
+                  <img src="img/slide-build.svg" alt="img">
+                </div>
+              </div>
+              <div class="catalog-complex__slide">
+                <img src="img/analog_1.jpg" alt="">
+                <div class="catalog-complex__slide-icons">
+                  <img src="img/slide-heart.svg" alt="img">
+                  <img src="img/slide-build.svg" alt="img">
+                </div>
+              </div>
+            </div>
+            <div class="catalog-complex__slider-counter">1/3</div>
+            <div class="catalog-complex__buttons-wrap catalog-complex__item-header-buttons">
+              <button type='button' class="catalog-complex__btn-more pink__btn">Подробнее</button>
+              <button type='button' class="catalog-complex__btn-show-map pink__btn"><img src="img/placeholder-red.svg"
+                  alt="">На карте</button>
+            </div>
+
+            <ul class="complex-advantages__features-list">
+              <li class="complex-advantages__features-item complex-advantages__features-item--sale">
+                <div class="complex-advantages__features-item-box">
+                  <svg width="13" height="14">
+                    <use xlink:href="#icon-feature_sale"></use>
+                  </svg>
+                </div>
+                <span class="complex-advantages__features-hint complex-advantages__features-hint--sale">Скидка
+                  партнерам</span>
+              </li>
+
+              <li class="complex-advantages__features-item complex-advantages__features-item--deal">
+                <div class="complex-advantages__features-item-box">
+                  <svg width="14" height="14">
+                    <use xlink:href="#icon-feature_deal"></use>
+                  </svg>
+                </div>
+                <span
+                  class="complex-advantages__features-hint complex-advantages__features-hint--deal">Безопасная&nbsp;сделка</span>
+              </li>
+              <li class="complex-advantages__features-item complex-advantages__features-item--gift">
+                <div class="complex-advantages__features-item-box">
+                  <svg width="13" height="10">
+                    <use xlink:href="#icon-feature_gift"></use>
+                  </svg>
+                </div>
+                <span
+                  class="complex-advantages__features-hint complex-advantages__features-hint--gift">Приемка&nbsp;в&nbsp;подарок</span>
+              </li>
+              <li class="complex-advantages__features-item complex-advantages__features-item--decor">
+                <div class="complex-advantages__features-item-box">
+                  <svg width="12" height="17">
+                    <use xlink:href="#icon-feature_decor"></use>
+                  </svg>
+                </div>
+                <span
+                  class="complex-advantages__features-hint complex-advantages__features-hint--decor">Сертификат&nbsp;на&nbsp;отделку</span>
+              </li>
+              <li class="complex-advantages__features-item complex-advantages__features-item--conditions">
+                <div class="complex-advantages__features-item-box">
+                  <svg width="18" height="13">
+                    <use xlink:href="#icon-bus"></use>
+                  </svg>
+                </div>
+                <span
+                  class="complex-advantages__features-hint complex-advantages__features-hint--gift">Специальные&nbsp;условия
+                  для&nbsp;иногородних</span>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-complex__item-content">
+            <div class="inner">
+              <div class="complex">ЖК "Новое Мурино"</div>
+              <div class="developer"><span class="text">ООО «Инвест-Строй»</span><img src="img/developer_logo.svg"
+                  alt=""></div>
+            </div>
+            <div class="catalog-complex__cost-block"><span class="cost-block__cost-from">2.4</span>-<span
+                class="cost-block__cost-to">7</span> млн. руб.</div>
+            <div class="square-metr">78,6 тыс. - 107,2 тыс. руб/м2</div>
+            <div class="address">Всеволжский р-н, п. Мурино</div>
+            <div class="metro"><img src="img/metro-el.svg" alt=""><span class="metro__name">Девяткино</span><span
+                class="metro__distance">15 мин пешком</span></div>
+            <div class="flat-deadline-field">
+              <div class="flat-deadline-field__select-arrow">
+                <img src="img/arrow__down-input-grey.svg">
+              </div>
+              <select class='flat-deadline' name="flat-deadline" id="flat-deadline">
+                <option value="0" hidden disabled selected>Срок сдачи</option>
+                <option value="1">корпус 1 - 2кв., 2021 г.</option>
+                <option value="2">корпус 2 - 2кв., 2021 г.</option>
+                <option value="3">корпус 2 - 2кв., 2021 г.</option>
+                <option value="4">корпус 2 - 2кв., 2021 г.</option>
+                <option value="5">корпус 2 - 2кв., 2021 г.</option>
+                <option value="6">корпус 2 - 2кв., 2021 г.</option>
+              </select>
+            </div>
+            <div class="catalog-complex-info-wrap">
+              <div class="flat-type studio">
+                <div class="flat-type__left-box">
+                  Студия от <span class="flat-type__square"><span class="flat-type__square-value">26.5</span>
+                    м<sup>2</sup></span>
+                </div>
+                <div class="flat-type__right-box">
+                  <span class="flat-type__cost-from">2.4</span>
+                  -<span class="flat-type__cost-to">2.8</span> млн. руб.
+                </div>
+              </div>
+              <div class="flat-type room">
+                <div class="flat-type__left-box">
+                  1-комнатная кв. от <span class="flat-type__square"><span class="flat-type__square-value">26.5</span>
+                    м<sup>2</sup></span>
+                </div>
+                <div class="flat-type__right-box">
+                  <span class="flat-type__cost-from">2.4</span>
+                  -<span class="flat-type__cost-to">2.8</span> млн. руб.
+                </div>
+              </div>
+              <div class="flat-type room">
+                <div class="flat-type__left-box">
+                  2-комнатная кв. от <span class="flat-type__square"><span class="flat-type__square-value">26.5</span>
+                    м<sup>2</sup></span>
+                </div>
+                <div class="flat-type__right-box">
+                  <span class="flat-type__cost-from">2.4</span>
+                  -<span class="flat-type__cost-to">2.8</span> млн. руб.
+                </div>
+              </div>
+              <div class="flat-type room">
+                <div class="flat-type__left-box">
+                  3-комнатная кв. от <span class="flat-type__square"><span class="flat-type__square-value">26.5</span>
+                    м<sup>2</sup></span>
+                </div>
+                <div class="flat-type__right-box">
+                  <span class="flat-type__cost-from">2.4</span>
+                  -<span class="flat-type__cost-to">2.8</span> млн. руб.
+                </div>
+              </div>
+            </div>
+            <div class="catalog-complex__description">
+              <p class="description">Неподалёку от Санкт-Петербурга, в городе Кудрово Всеволожского района, ООО
+                "Отделстрой" возводит довольно масштабный жилой комплекс с загадочным и красивым названием "Новый
+                Оккервиль". Удачно расположившись на 50 га живописного берега одноимённой реки, комплекс привлекает
+                разнообразием планировок (да ещё каким, более 200 вариантов квартир) и близостью (ближе некуда, 300 м -
+                и Питер) к Северной столице. Что ещё интересного будет в "Новом Оккервиле", что - не очень, и куда делся
+                старый - расскажем далее подробно. </p>
+              <p class="description">Неподалёку от Санкт-Петербурга, в городе Кудрово Всеволожского района, ООО
+                "Отделстрой" возводит довольно масштабный жилой комплекс с загадочным и красивым названием "Новый
+                Оккервиль". Удачно расположившись на 50 га живописного берега одноимённой реки, комплекс привлекает
+                разнообразием планировок (да ещё каким, более 200 вариантов квартир) и близостью (ближе некуда, 300 м -
+                и Питер) к Северной столице. Что ещё интересного будет в "Новом Оккервиле", что - не очень, и куда делся
+                старый - расскажем далее подробно. </p>
+            </div>
+            <div class="catalog-complex__buttons-wrap">
+              <button type='button' class="catalog-complex__btn-more pink__btn">Подробнее</button>
+              <button type='button' class="catalog-complex__btn-show-map pink__btn"><img src="img/placeholder-red.svg"
+                  alt="">На карте</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="pink__btn catalog-complex__show-more">Показать еще <span class="count-flats">25 объектов</span><img
+          src="img/arrow__down-input-grey.svg" alt="img"></div>
+
+      <div class="pagination">
+        <div class="pagination__prev">«</div>
+        <div class="pagination__item pagination__item--active first-page">1</div>
+        <div class="pagination__item">2</div>
+        <div class="pagination__item">3</div>
+        <div class="pagination__item">4</div>
+        <div class="pagination__item">5</div>
+        <div class="pagination__item">6</div>
+        <div class="pagination__item">7</div>
+        <div class="pagination__item">8</div>
+        <div class="pagination__item">9</div>
+        <div class="pagination__item">10</div>
+        <div class="pagination__next">»</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advice-box">
+    <div class="catalog-wrapper">
+      <h3 class="advice-box__title">Смотрите полезные советы</h3>
+      <div class="advice-slider">
+        <div class="advice-slider__item">
+          <div class="advice-slider__item-video">
+            <iframe style="width:100%; height:216px" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="advice-slider__item-desc">
+            Перепланировка. С чего начать?
+            Подводные камни
+          </div>
+        </div>
+
+        <div class="advice-slider__item">
+          <div class="advice-slider__item-video">
+            <iframe style="width:100%; height:216px" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="advice-slider__item-desc">
+            Перепланировка. С чего начать?
+            Подводные камни
+          </div>
+        </div>
+
+
+        <div class="advice-slider__item">
+          <div class="advice-slider__item-video">
+            <iframe style="width:100%; height:216px" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="advice-slider__item-desc">
+            Перепланировка. С чего начать?
+            Подводные камни
+          </div>
+        </div>
+
+
+        <div class="advice-slider__item">
+          <div class="advice-slider__item-video">
+            <iframe style="width:100%; height:216px" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="advice-slider__item-desc">
+            Перепланировка. С чего начать?
+            Подводные камни
+          </div>
+        </div>
+        <div class="advice-slider__item">
+          <div class="advice-slider__item-video">
+            <iframe style="width:100%; height:216px" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="advice-slider__item-desc">
+            Перепланировка. С чего начать?
+            Подводные камни
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <footer class="catalog-footer">
+    <div class="catalog-wrapper">
+      <div class="catalog-footer__wrap">
+        <div class="catalog-footer__item buildings">
+          <h4 class="catalog-footer__item-title">Новостройки</h4>
+          <div class="buildings__item catalog-footer__text"><a href="#">В Санкт-Петербурге</a></div>
+          <div class="buildings__item catalog-footer__text"><a href="#">В Ленинградской области</a></div>
+          <div class="buildings__item catalog-footer__text"><a href="#">В Москве</a></div>
+          <div class="buildings__item catalog-footer__text"><a href="#">В Московской области</a></div>
+          <div class="buildings__show-map catalog-footer__text"><a href="">Новостройки на карте</a></div>
+        </div>
+        <div class="catalog-footer__item popular">
+          <h4 class="catalog-footer__item-title">Популярное</h4>
+          <div class="popular__item catalog-footer__text"><a href="#">До 3 миллионов</a></div>
+          <div class="popular__item catalog-footer__text"><a href="#">До 4 миллионов</a></div>
+          <div class="popular__item catalog-footer__text"><a href="#">До 5 миллионов</a></div>
+        </div>
+        <div class="catalog-footer__item different">
+          <div class="different__sales catalog-footer__text"><a href="">Старты продаж новостроек</a></div>
+          <div class="different__other other">
+            <div class="other__item catalog-footer__text other__video"><a href="#">Видеобзоры ЖК</a></div>
+            <div class="other__item catalog-footer__text other__item--width"><a href="#">Новости</a></div>
+            <div class="other__item catalog-footer__text other__item--width"><a href="#">Статьи</a></div>
+          </div>
+
+        </div>
+        <div class="catalog-footer__item social">
+          <form action="" class="form-search">
+            <div class="form-search__field">
+              <input type="search" class="form-search__input" placeholder="Поиск по базе">
+              <button type='submit' class="btn-search"><img src="img/icon-search.svg" alt=""></button>
+            </div>
+          </form>
+
+          <div class="social__site">PRONovostroyki.com</div>
+
+          <div class="social__list">
+            <div class="social__item"><a href="#"><img src="img/logo_vk.png" alt=""></a></div>
+            <div class="social__item"><a href="#"><img src="img/logo_youtube.png" alt=""></a></div>
+            <div class="social__item"><a href="#"><img src="img/logo_instagram.png" alt=""></a></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="map-modal">
+    <div class="map-wrapper">
+
+      <div class="map-filter">
+        <div class="map-modal__close"><span class="close"><img src="img/arrow-left-grey.svg" alt="img">Показать
+            списком</span></div>
+        <h3 class="map-modal__title">Новостройки на карте <span class="city">Санкт-Петербурга</span></h3>
+        <hr class="hr">
+
+        <form action="" class="map-filter__form">
+
+          <div class="map-filter__form-inner">
+            <div class="map-filter-field">
+              <span class="map-filter-field__name">Район:</span>
+              <div class="map-filter-field__select-arrow">
+                <img src="img/arrow__down-input-grey.svg">
+              </div>
+              <div class="select-input">
+                <input type="text" value="" name='area' class="select map-filter__area map-filter__input" onkeydown="return false" placeholder="Район:">
+                <div class="checkboxes">
+                  <label>
+                    <input type="checkbox" name='area' value="1" /><span
+                      class="check"></span><span class="text">Район 1</span></label>
+                  <label>
+                    <input type="checkbox" name='area' value="2" /><span
+                      class="check"></span><span class="text">Район 2</span></label>
+                  <label>
+                    <input type="checkbox" name='area' value="3" /><span
+                      class="check"></span><span class="text">Район 3</span></label>
+                </div>
+              </div>
+              
+            </div>
+
+            
+            <div class="map-filter-field">
+              <span class="map-filter-field__name">Метро:</span>
+              <div class="map-filter-field__select-arrow">
+                <img src="img/arrow__down-input-grey.svg">
+              </div>
+              <div class="select-input">
+                <input type="text" value="" name='metro' class="select map-filter__metro map-filter__input" onkeydown="return false" placeholder="Метро:">
+                <div class="checkboxes">
+                  <label>
+                    <input type="checkbox" name='metro' value="1" /><span
+                      class="check"></span><span class="text">Метро 1</span></label>
+                  <label>
+                    <input type="checkbox" name='metro' value="2" /><span
+                      class="check"></span><span class="text">Метро 2</span></label>
+                  <label>
+                    <input type="checkbox" name='metro' value="3" /><span
+                      class="check"></span><span class="text">Метро 3</span></label>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="map-filter-field">
+              <span class="map-filter-field__name">Срок сдачи:</span>
+              <div class="map-filter-field__select-arrow">
+                <img src="img/arrow__down-input-grey.svg">
+              </div>
+              <div class="select-input">
+                <input type="text" value="" name='deadline' class="select map-filter__deadline map-filter__input" onkeydown="return false" placeholder="Срок сдачи:">
+                <div class="checkboxes">
+                  <label>
+                    <input type="checkbox" name='deadline' value="2019" /><span
+                      class="check"></span><span class="text">2019</span></label>
+                  <label>
+                    <input type="checkbox" name='deadline' value="2020" /><span
+                      class="check"></span><span class="text">2020</span></label>
+                  <label>
+                    <input type="checkbox" name='deadline' value="2021" /><span
+                      class="check"></span><span class="text">2021</span></label>
+                  <label>
+                    <input type="checkbox" name='deadline' value="2022" /><span
+                      class="check"></span><span class="text">2022</span></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-filter-field map-filter-field-cost">
+              <span class="map-filter-field__name map-filter-field__name-cost">Стоимость:</span>
+              <div class="map-filter-field-cost__wrap">
+                <input type="text" class='map-filter__cost-from map-filter__input' name=" cost-from" id="cost-from"
+                  placeholder="от">
+                <input type=" text" class='map-filter__cost-to map-filter__input' name="cost-to" id="cost-to" placeholder="до">
+              </div>
+            </div>
+
+              <div class="map-filter-field">
+                  <span class="map-filter-field__name">Комплекс:</span>
+                  <div class="map-filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='complex' class="select map-filter__complex map-filter__input" onkeydown="return false" placeholder="Комплекс:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='complex' value="1" /><span
+                          class="check"></span><span class="text">ЖК "Большое Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="2" /><span
+                          class="check"></span><span class="text">ЖК "Среднее Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="3" /><span
+                          class="check"></span><span class="text">ЖК "Старое Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="4" /><span
+                          class="check"></span><span class="text">ЖК "Новое Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="5" /><span
+                          class="check"></span><span class="text">ЖК "Сложное Мурино"</span></label>
+                      <label>
+                        <input type="checkbox" name='complex' value="6" /><span
+                          class="check"></span><span class="text">ЖК "Простое Мурино"</span></label>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="map-filter-field">
+                  <span class="map-filter-field__name">Застройщик:</span>
+                  <div class="map-filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='developer' class="select map-filter__developer map-filter__input" onkeydown="return false" placeholder="Застройщик:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='developer' value="1" /><span
+                          class="check"></span><span class="text">ООО «Инвест-Строй»</span></label>
+                      <label>
+                        <input type="checkbox" name='developer' value="2" /><span
+                          class="check"></span><span class="text">ООО «Инвест-Строй» 2</span></label>
+                      <label>
+                        <input type="checkbox" name='developer' value="3" /><span
+                          class="check"></span><span class="text">ООО «Инвест-Строй» 3</span></label>
+                      <label>
+                        <input type="checkbox" name='developer' value="4" /><span
+                          class="check"></span><span class="text">ООО «Инвест-Строй» 4</span></label>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="map-filter-field">
+                  <span class="map-filter-field__name">Тип квартиры:</span>
+                  <div class="map-filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='room' class="select map-filter__room map-filter__input" onkeydown="return false" placeholder="Тип квартиры:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='room' value="1" /><span
+                          class="check"></span><span class="text">1 ккв</span></label>
+                      <label>
+                        <input type="checkbox" name='room' value="2" /><span
+                          class="check"></span><span class="text">2 ккв</span></label>
+                      <label>
+                        <input type="checkbox" name='room' value="3" /><span
+                          class="check"></span><span class="text">3 ккв</span></label>
+                      <label>
+                        <input type="checkbox" name='room' value="4" /><span
+                          class="check"></span><span class="text">Студия</span></label>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="map-filter-field">
+                  <span class="map-filter-field__name">Тип собственности:</span>
+                  <div class="map-filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='type-property' class="select map-filter__type-property map-filter__input" onkeydown="return false" placeholder="Тип собственности:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='type-property' value="1" /><span
+                          class="check"></span><span class="text">Тип собственности 1</span></label>
+                      <label>
+                        <input type="checkbox" name='type-property' value="2" /><span
+                          class="check"></span><span class="text">Тип собственности 2</span></label>
+                      <label>
+                        <input type="checkbox" name='type-property' value="3" /><span
+                          class="check"></span><span class="text">Тип собственности 3</span></label>
+                      <label>
+                        <input type="checkbox" name='type-property' value="4" /><span
+                          class="check"></span><span class="text">Тип собственности 4</span></label>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="map-filter-field">
+                  <span class="map-filter-field__name">Отделка:</span>
+                  <div class="map-filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='type' class="select map-filter__type map-filter__input" onkeydown="return false" placeholder="Отделка:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='type' value="1" /><span
+                          class="check"></span><span class="text">С отделкой</span></label>
+                      <label>
+                        <input type="checkbox" name='type' value="2" /><span
+                          class="check"></span><span class="text">Без отделки</span></label>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="map-filter-field map-filter-field-square">
+              <span class="map-filter-field__name map-filter-field__name-square">Площадь:</span>
+              <div class="map-filter-field-cost__wrap">
+                <input type="text" class='map-filter__square-from map-filter__input' name=" square-from" id="square-from"
+                  placeholder="от">
+                <input type=" text" class='map-filter__square-to map-filter__input' name="square-to" id="square-to"
+                  placeholder="до">
+              </div>
+            </div>
+
+              <div class="map-filter-field">
+                  <span class="map-filter-field__name">Банк:</span>
+                  <div class="map-filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='bank' class="select map-filter__bank map-filter__input" onkeydown="return false" placeholder="Банк:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='bank' value="1" /><span
+                          class="check"></span><span class="text">Банк 1</span></label>
+                      <label>
+                        <input type="checkbox" name='bank' value="2" /><span
+                          class="check"></span><span class="text">Банк 2</span></label>
+                      <label>
+                        <input type="checkbox" name='bank' value="3" /><span
+                          class="check"></span><span class="text">Банк 3</span></label>
+                      <label>
+                        <input type="checkbox" name='bank' value="4" /><span
+                          class="check"></span><span class="text">Банк 4</span></label>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="map-filter-field">
+                  <span class="map-filter-field__name">Оплата:</span>
+                  <div class="map-filter-field__select-arrow">
+                    <img src="img/arrow__down-input-grey.svg">
+                  </div>
+                  <div class="select-input">
+                    <input type="text" value="" name='payment' class="select map-filter__payment map-filter__input" onkeydown="return false" placeholder="Оплата:">
+                    <div class="checkboxes">
+                      <label>
+                        <input type="checkbox" name='payment' value="1" /><span
+                          class="check"></span><span class="text">Оплата 1</span></label>
+                      <label>
+                        <input type="checkbox" name='payment' value="2" /><span
+                          class="check"></span><span class="text">Оплата 2</span></label>
+                      <label>
+                        <input type="checkbox" name='payment' value="3" /><span
+                          class="check"></span><span class="text">Оплата 3</span></label>
+                      <label>
+                        <input type="checkbox" name='payment' value="4" /><span
+                          class="check"></span><span class="text">Оплата 4</span></label>
+                    </div>
+                  </div>
+                </div>
+        </div>
+
+          <button type='button' class='map-filter__btn-show pink__btn'>Показать объекты</button>
+          <button type="reset" class="map-filter__btn-reset pink__btn">Сбросить все фильтры <img
+              src="img/modal-close-red.svg" alt=""></button>
+
+        </form>
+      </div>
+      <div id="map"></div>
+      <div class="map-footer">
+        <button type='button' class="map-footer__btn-open-filter"><img src="img/icon-filter.svg" alt="">Фильтр
+          </dbuttoniv>
+          <button type='button' class="map-footer__btn-open-list"><img src="img/filter-list.svg" alt="">Списком</button>
+      </div>
+    </div>
+  </section>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=3293948d-9c3b-41fc-bcb2-dd98ae79efcf&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="js/totalScriptsCatalog.js"></script>
+
+  <script>
+     
+    </script>
+</body>
+
+</html>
